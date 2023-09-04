@@ -1,8 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MobileIntelligence
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MobileIntelligence
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdSupport
 import AppTrackingTransparency
+import CallKit
 import SystemConfiguration.CaptiveNetwork
 import CommonCrypto
 import CommonCrypto.CommonDigest
@@ -22,6 +24,7 @@ import SystemConfiguration
 import UIKit
 import WebKit
 import _Concurrency
+import _StringProcessing
 public enum TextFieldType : Swift.String {
   case userid
   case email
@@ -43,6 +46,7 @@ extension UIKit.UIView {
 @_hasMissingDesignatedInitializers public class MobileIntelligence {
   @discardableResult
   convenience public init(withOptions options: MobileIntelligence.Options)
+  public class func trackPage(pageName: Swift.String)
   public class func trackField(forKey key: Swift.String, text: Swift.String)
   public class func trackFieldFocus(forKey key: Swift.String, hasFocus: Swift.Bool)
   public class func submitData(completion: @escaping ((MobileIntelligence.Response) -> ()))
@@ -50,48 +54,6 @@ extension UIKit.UIView {
   public class func getSessionKey() -> Swift.String
   public class func silentAuth(forNumber phoneNumber: Swift.String, correlationId: Swift.String, completion: @escaping ((Swift.Bool) -> ()))
   @objc deinit
-}
-public class OptionsBuilder {
-  public init()
-  public func setClientId(with clientId: Swift.String) -> MobileIntelligence.OptionsBuilder
-  public func setSessionKey(with sessionKey: Swift.String) -> MobileIntelligence.OptionsBuilder
-  public func setUserIdHash(with userIdHash: Swift.String) -> MobileIntelligence.OptionsBuilder
-  public func setEnvironment(with environment: Swift.String) -> MobileIntelligence.OptionsBuilder
-  public func setFlow(with flow: Swift.String) -> MobileIntelligence.OptionsBuilder
-  public func setPartnerId(with partnerId: Swift.String) -> MobileIntelligence.OptionsBuilder
-  public func enableBehaviorBiometrics(with enableBehaviorBiometrics: Swift.Bool) -> MobileIntelligence.OptionsBuilder
-  public func enableClipboardTracking(with enableClipboardTracking: Swift.Bool) -> MobileIntelligence.OptionsBuilder
-  public func enableFieldTracking(with enableFieldTracking: Swift.Bool) -> MobileIntelligence.OptionsBuilder
-  public func setShouldAutoSubmitOnInit(with shouldAutoSubmitOnInit: Swift.Bool) -> MobileIntelligence.OptionsBuilder
-  public func build() -> MobileIntelligence.Options
-  @objc deinit
-}
-public struct Options : Swift.Codable {
-  public var clientId: Swift.String?
-  public var sessionKey: Swift.String?
-  public var userIdHash: Swift.String?
-  public var environment: Swift.String?
-  public var flow: Swift.String?
-  public var partnerId: Swift.String?
-  public var enableBehaviorBiometrics: Swift.Bool
-  public var enableClipboardTracking: Swift.Bool
-  public var enableFieldTracking: Swift.Bool
-  public static let ENV_SANDBOX: Swift.String
-  public static let ENV_PRODUCTION: Swift.String
-  public init()
-  @available(*, deprecated, message: "Please use OptionsBuilder")
-  public init(clientId: Swift.String, sessionKey: Swift.String, userIdHash: Swift.String, environment: Swift.String, enableBehaviorBiometrics: Swift.Bool, flow: Swift.String, partnerId: Swift.String, enableClipboardTracking: Swift.Bool = false, enableFieldTracking: Swift.Bool = true)
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
-public struct UpdateOptions : Swift.Codable {
-  public var userIdHash: Swift.String?
-  public var sessionKey: Swift.String
-  public var flow: Swift.String
-  public init()
-  public init(sessionKey: Swift.String = "", userIdHash: Swift.String?, flow: Swift.String = "")
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
 }
 public enum ErrorType : Swift.Error, Foundation.LocalizedError {
   case noInternetConnection
@@ -161,6 +123,62 @@ public struct KycStatusResponse : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+public enum Region : Swift.String {
+  case DEFAULT
+  case EU
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class Options {
+  public var clientId: Swift.String?
+  public var sessionKey: Swift.String?
+  public var parentSessionKey: Swift.String?
+  public var userIdHash: Swift.String?
+  public var environment: Swift.String?
+  public var flow: Swift.String?
+  public var partnerId: Swift.String?
+  public var enableBehaviorBiometrics: Swift.Bool
+  public var enableClipboardTracking: Swift.Bool
+  public var enableFieldTracking: Swift.Bool
+  public static let ENV_SANDBOX: Swift.String
+  public static let ENV_PRODUCTION: Swift.String
+  public init()
+  @available(*, deprecated, message: "Please use OptionsBuilder")
+  convenience public init(clientId: Swift.String, sessionKey: Swift.String, parentSessionKey: Swift.String, userIdHash: Swift.String, environment: Swift.String, enableBehaviorBiometrics: Swift.Bool, flow: Swift.String, partnerId: Swift.String, enableClipboardTracking: Swift.Bool = false, enableFieldTracking: Swift.Bool = true, region: MobileIntelligence.Region = Region.DEFAULT, baseUrl: Swift.String = "")
+  @objc deinit
+}
+public struct UpdateOptions : Swift.Codable {
+  public var userIdHash: Swift.String?
+  public var sessionKey: Swift.String
+  public var parentSessionKey: Swift.String
+  public var flow: Swift.String
+  public init()
+  public init(sessionKey: Swift.String = "", parentSessionKey: Swift.String = "", userIdHash: Swift.String?, flow: Swift.String = "")
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public class OptionsBuilder {
+  public init()
+  public func setClientId(with clientId: Swift.String) -> MobileIntelligence.OptionsBuilder
+  public func setSessionKey(with sessionKey: Swift.String) -> MobileIntelligence.OptionsBuilder
+  public func setUserIdHash(with userIdHash: Swift.String) -> MobileIntelligence.OptionsBuilder
+  public func setEnvironment(with environment: Swift.String) -> MobileIntelligence.OptionsBuilder
+  public func setFlow(with flow: Swift.String) -> MobileIntelligence.OptionsBuilder
+  public func setPartnerId(with partnerId: Swift.String) -> MobileIntelligence.OptionsBuilder
+  public func enableBehaviorBiometrics(with enableBehaviorBiometrics: Swift.Bool) -> MobileIntelligence.OptionsBuilder
+  public func enableClipboardTracking(with enableClipboardTracking: Swift.Bool) -> MobileIntelligence.OptionsBuilder
+  public func enableFieldTracking(with enableFieldTracking: Swift.Bool) -> MobileIntelligence.OptionsBuilder
+  public func setShouldAutoSubmitOnInit(with shouldAutoSubmitOnInit: Swift.Bool) -> MobileIntelligence.OptionsBuilder
+  public func setSourcePlatform(with sourcePlatform: Swift.String) -> MobileIntelligence.OptionsBuilder
+  public func setParentSessionKey(with parentSessionKey: Swift.String) -> MobileIntelligence.OptionsBuilder
+  public func setRegion(with region: MobileIntelligence.Region) -> MobileIntelligence.OptionsBuilder
+  public func setBaseUrl(with baseUrl: Swift.String) -> MobileIntelligence.OptionsBuilder
+  public func build() -> MobileIntelligence.Options
+  @objc deinit
+}
 extension MobileIntelligence.TextFieldType : Swift.Equatable {}
 extension MobileIntelligence.TextFieldType : Swift.Hashable {}
 extension MobileIntelligence.TextFieldType : Swift.RawRepresentable {}
@@ -169,3 +187,6 @@ extension MobileIntelligence.ErrorType : Swift.Hashable {}
 extension MobileIntelligence.Model : Swift.Equatable {}
 extension MobileIntelligence.Model : Swift.Hashable {}
 extension MobileIntelligence.Model : Swift.RawRepresentable {}
+extension MobileIntelligence.Region : Swift.Equatable {}
+extension MobileIntelligence.Region : Swift.Hashable {}
+extension MobileIntelligence.Region : Swift.RawRepresentable {}

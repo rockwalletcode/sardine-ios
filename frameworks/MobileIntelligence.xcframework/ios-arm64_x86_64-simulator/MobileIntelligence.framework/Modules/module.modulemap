@@ -6,6 +6,6 @@ framework module MobileIntelligence {
 }
 
 module MobileIntelligence.Swift {
-    header "MobileIntelligence-Swift.h"
-    requires objc
+  header "MobileIntelligence-Swift.h"
+  requires objc
 }
