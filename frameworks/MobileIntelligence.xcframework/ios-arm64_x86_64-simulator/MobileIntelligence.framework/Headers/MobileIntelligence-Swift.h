@@ -551,4 +551,6 @@ using UInt = size_t;
 #pragma clang diagnostic pop
 #endif
 
+#else
+#error unsupported Swift architecture
 #endif

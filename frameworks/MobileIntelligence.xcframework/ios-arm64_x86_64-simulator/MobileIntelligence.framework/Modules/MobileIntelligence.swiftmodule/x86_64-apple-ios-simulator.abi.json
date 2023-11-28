@@ -372,12 +372,12 @@
                 "kind": "TypeNominal",
                 "name": "Options",
                 "printedName": "MobileIntelligence.Options",
-                "usr": "s:18MobileIntelligence7OptionsC"
+                "usr": "s:18MobileIntelligence7OptionsV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MobileIntelligenceAAC11withOptionsAbA0D0C_tcfc",
-            "mangledName": "$s18MobileIntelligenceAAC11withOptionsAbA0D0C_tcfc",
+            "usr": "s:18MobileIntelligenceAAC11withOptionsAbA0D0V_tcfc",
+            "mangledName": "$s18MobileIntelligenceAAC11withOptionsAbA0D0V_tcfc",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "Convenience",
@@ -2656,6 +2656,424 @@
       },
       {
         "kind": "Import",
+        "name": "Compression",
+        "printedName": "Compression",
+        "declKind": "Import",
+        "moduleName": "MobileIntelligence",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MobileIntelligence"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Crc32",
+        "printedName": "Crc32",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Crc32",
+                "printedName": "MobileIntelligence.Crc32",
+                "usr": "s:18MobileIntelligence5Crc32V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MobileIntelligence5Crc32VACycfc",
+            "mangledName": "$s18MobileIntelligence5Crc32VACycfc",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "checksum",
+            "printedName": "checksum",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MobileIntelligence5Crc32V8checksums6UInt32Vvp",
+            "mangledName": "$s18MobileIntelligence5Crc32V8checksums6UInt32Vvp",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MobileIntelligence5Crc32V8checksums6UInt32Vvg",
+                "mangledName": "$s18MobileIntelligence5Crc32V8checksums6UInt32Vvg",
+                "moduleName": "MobileIntelligence",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MobileIntelligence5Crc32V8checksums6UInt32Vvs",
+                "mangledName": "$s18MobileIntelligence5Crc32V8checksums6UInt32Vvs",
+                "moduleName": "MobileIntelligence",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MobileIntelligence5Crc32V8checksums6UInt32VvM",
+                "mangledName": "$s18MobileIntelligence5Crc32V8checksums6UInt32VvM",
+                "moduleName": "MobileIntelligence",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "advance",
+            "printedName": "advance(withChunk:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MobileIntelligence5Crc32V7advance9withChunky10Foundation4DataV_tF",
+            "mangledName": "$s18MobileIntelligence5Crc32V7advance9withChunky10Foundation4DataV_tF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MobileIntelligence5Crc32V11descriptionSSvp",
+            "mangledName": "$s18MobileIntelligence5Crc32V11descriptionSSvp",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MobileIntelligence5Crc32V11descriptionSSvg",
+                "mangledName": "$s18MobileIntelligence5Crc32V11descriptionSSvg",
+                "moduleName": "MobileIntelligence",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18MobileIntelligence5Crc32V",
+        "mangledName": "$s18MobileIntelligence5Crc32V",
+        "moduleName": "MobileIntelligence",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Adler32",
+        "printedName": "Adler32",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Adler32",
+                "printedName": "MobileIntelligence.Adler32",
+                "usr": "s:18MobileIntelligence7Adler32V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MobileIntelligence7Adler32VACycfc",
+            "mangledName": "$s18MobileIntelligence7Adler32VACycfc",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "checksum",
+            "printedName": "checksum",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt32",
+                "printedName": "Swift.UInt32",
+                "usr": "s:s6UInt32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MobileIntelligence7Adler32V8checksums6UInt32Vvp",
+            "mangledName": "$s18MobileIntelligence7Adler32V8checksums6UInt32Vvp",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MobileIntelligence7Adler32V8checksums6UInt32Vvg",
+                "mangledName": "$s18MobileIntelligence7Adler32V8checksums6UInt32Vvg",
+                "moduleName": "MobileIntelligence",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt32",
+                    "printedName": "Swift.UInt32",
+                    "usr": "s:s6UInt32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MobileIntelligence7Adler32V8checksums6UInt32Vvs",
+                "mangledName": "$s18MobileIntelligence7Adler32V8checksums6UInt32Vvs",
+                "moduleName": "MobileIntelligence",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MobileIntelligence7Adler32V8checksums6UInt32VvM",
+                "mangledName": "$s18MobileIntelligence7Adler32V8checksums6UInt32VvM",
+                "moduleName": "MobileIntelligence",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "advance",
+            "printedName": "advance(withChunk:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MobileIntelligence7Adler32V7advance9withChunky10Foundation4DataV_tF",
+            "mangledName": "$s18MobileIntelligence7Adler32V7advance9withChunky10Foundation4DataV_tF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MobileIntelligence7Adler32V11descriptionSSvp",
+            "mangledName": "$s18MobileIntelligence7Adler32V11descriptionSSvp",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MobileIntelligence7Adler32V11descriptionSSvg",
+                "mangledName": "$s18MobileIntelligence7Adler32V11descriptionSSvg",
+                "moduleName": "MobileIntelligence",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18MobileIntelligence7Adler32V",
+        "mangledName": "$s18MobileIntelligence7Adler32V",
+        "moduleName": "MobileIntelligence",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3378,6 +3796,46 @@
           },
           {
             "kind": "Var",
+            "name": "iPadAir5",
+            "printedName": "iPadAir5",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO8iPadAir5yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO8iPadAir5yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "iPad5",
             "printedName": "iPad5",
             "children": [
@@ -3571,6 +4029,46 @@
             "declKind": "EnumElement",
             "usr": "s:18MobileIntelligence5ModelO5iPad9yA2CmF",
             "mangledName": "$s18MobileIntelligence5ModelO5iPad9yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPad10",
+            "printedName": "iPad10",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO6iPad10yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO6iPad10yA2CmF",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "RawDocComment"
@@ -3931,6 +4429,86 @@
             "declKind": "EnumElement",
             "usr": "s:18MobileIntelligence5ModelO9iPadPro11yA2CmF",
             "mangledName": "$s18MobileIntelligence5ModelO9iPadPro11yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPadPro2_11",
+            "printedName": "iPadPro2_11",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO11iPadPro2_11yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO11iPadPro2_11yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPadPro3_11",
+            "printedName": "iPadPro3_11",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO11iPadPro3_11yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO11iPadPro3_11yA2CmF",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "RawDocComment"
@@ -5018,8 +5596,8 @@
           },
           {
             "kind": "Var",
-            "name": "iPhone12mini",
-            "printedName": "iPhone12mini",
+            "name": "iPhone12Mini",
+            "printedName": "iPhone12Mini",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -5049,8 +5627,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:18MobileIntelligence5ModelO12iPhone12miniyA2CmF",
-            "mangledName": "$s18MobileIntelligence5ModelO12iPhone12miniyA2CmF",
+            "usr": "s:18MobileIntelligence5ModelO12iPhone12MiniyA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO12iPhone12MiniyA2CmF",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "RawDocComment"
@@ -5331,6 +5909,726 @@
             "declKind": "EnumElement",
             "usr": "s:18MobileIntelligence5ModelO14iPhone13ProMaxyA2CmF",
             "mangledName": "$s18MobileIntelligence5ModelO14iPhone13ProMaxyA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhoneSE3",
+            "printedName": "iPhoneSE3",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO9iPhoneSE3yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO9iPhoneSE3yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone14",
+            "printedName": "iPhone14",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO8iPhone14yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO8iPhone14yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone14Plus",
+            "printedName": "iPhone14Plus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO12iPhone14PlusyA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO12iPhone14PlusyA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone14Pro",
+            "printedName": "iPhone14Pro",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO11iPhone14ProyA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO11iPhone14ProyA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone14ProMax",
+            "printedName": "iPhone14ProMax",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO14iPhone14ProMaxyA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO14iPhone14ProMaxyA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone15",
+            "printedName": "iPhone15",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO8iPhone15yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO8iPhone15yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone15Plus",
+            "printedName": "iPhone15Plus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO12iPhone15PlusyA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO12iPhone15PlusyA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone15Pro",
+            "printedName": "iPhone15Pro",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO11iPhone15ProyA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO11iPhone15ProyA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone15ProMax",
+            "printedName": "iPhone15ProMax",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO14iPhone15ProMaxyA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO14iPhone15ProMaxyA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppleWatch1",
+            "printedName": "AppleWatch1",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO11AppleWatch1yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO11AppleWatch1yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppleWatchS1",
+            "printedName": "AppleWatchS1",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO12AppleWatchS1yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO12AppleWatchS1yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppleWatchS2",
+            "printedName": "AppleWatchS2",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO12AppleWatchS2yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO12AppleWatchS2yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppleWatchS3",
+            "printedName": "AppleWatchS3",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO12AppleWatchS3yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO12AppleWatchS3yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppleWatchS4",
+            "printedName": "AppleWatchS4",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO12AppleWatchS4yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO12AppleWatchS4yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppleWatchS5",
+            "printedName": "AppleWatchS5",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO12AppleWatchS5yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO12AppleWatchS5yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppleWatchSE",
+            "printedName": "AppleWatchSE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO12AppleWatchSEyA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO12AppleWatchSEyA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppleWatchS6",
+            "printedName": "AppleWatchS6",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO12AppleWatchS6yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO12AppleWatchS6yA2CmF",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppleWatchS7",
+            "printedName": "AppleWatchS7",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MobileIntelligence.Model.Type) -> MobileIntelligence.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "MobileIntelligence.Model",
+                    "usr": "s:18MobileIntelligence5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MobileIntelligence.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "MobileIntelligence.Model",
+                        "usr": "s:18MobileIntelligence5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MobileIntelligence5ModelO12AppleWatchS7yA2CmF",
+            "mangledName": "$s18MobileIntelligence5ModelO12AppleWatchS7yA2CmF",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "RawDocComment"
@@ -6169,8 +7467,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsC8clientIdSSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsC8clientIdSSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsV8clientIdSSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsV8clientIdSSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -6200,8 +7498,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC8clientIdSSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsC8clientIdSSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsV8clientIdSSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsV8clientIdSSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6232,8 +7530,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC8clientIdSSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsC8clientIdSSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsV8clientIdSSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsV8clientIdSSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -6250,8 +7548,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC8clientIdSSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsC8clientIdSSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsV8clientIdSSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsV8clientIdSSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6279,8 +7577,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsC10sessionKeySSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsC10sessionKeySSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsV10sessionKeySSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsV10sessionKeySSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -6310,8 +7608,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC10sessionKeySSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsC10sessionKeySSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsV10sessionKeySSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsV10sessionKeySSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6342,8 +7640,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC10sessionKeySSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsC10sessionKeySSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsV10sessionKeySSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsV10sessionKeySSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -6360,8 +7658,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC10sessionKeySSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsC10sessionKeySSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsV10sessionKeySSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsV10sessionKeySSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6389,8 +7687,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsC16parentSessionKeySSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsC16parentSessionKeySSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsV16parentSessionKeySSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsV16parentSessionKeySSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -6420,8 +7718,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC16parentSessionKeySSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsC16parentSessionKeySSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsV16parentSessionKeySSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsV16parentSessionKeySSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6452,8 +7750,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC16parentSessionKeySSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsC16parentSessionKeySSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsV16parentSessionKeySSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsV16parentSessionKeySSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -6470,8 +7768,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC16parentSessionKeySSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsC16parentSessionKeySSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsV16parentSessionKeySSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsV16parentSessionKeySSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6499,8 +7797,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsC10userIdHashSSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsC10userIdHashSSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsV10userIdHashSSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsV10userIdHashSSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -6530,8 +7828,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC10userIdHashSSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsC10userIdHashSSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsV10userIdHashSSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsV10userIdHashSSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6562,8 +7860,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC10userIdHashSSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsC10userIdHashSSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsV10userIdHashSSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsV10userIdHashSSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -6580,8 +7878,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC10userIdHashSSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsC10userIdHashSSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsV10userIdHashSSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsV10userIdHashSSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6609,8 +7907,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsC11environmentSSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsC11environmentSSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsV11environmentSSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsV11environmentSSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -6640,8 +7938,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC11environmentSSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsC11environmentSSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsV11environmentSSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsV11environmentSSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6672,8 +7970,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC11environmentSSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsC11environmentSSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsV11environmentSSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsV11environmentSSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -6690,8 +7988,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC11environmentSSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsC11environmentSSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsV11environmentSSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsV11environmentSSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6719,8 +8017,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsC4flowSSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsC4flowSSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsV4flowSSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsV4flowSSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -6750,8 +8048,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC4flowSSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsC4flowSSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsV4flowSSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsV4flowSSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6782,8 +8080,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC4flowSSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsC4flowSSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsV4flowSSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsV4flowSSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -6800,8 +8098,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC4flowSSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsC4flowSSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsV4flowSSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsV4flowSSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6829,8 +8127,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsC9partnerIdSSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsC9partnerIdSSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsV9partnerIdSSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsV9partnerIdSSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -6860,8 +8158,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC9partnerIdSSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsC9partnerIdSSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsV9partnerIdSSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsV9partnerIdSSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6892,8 +8190,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC9partnerIdSSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsC9partnerIdSSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsV9partnerIdSSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsV9partnerIdSSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -6910,8 +8208,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC9partnerIdSSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsC9partnerIdSSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsV9partnerIdSSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsV9partnerIdSSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6931,8 +8229,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvp",
-            "mangledName": "$s18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvp",
+            "usr": "s:18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvp",
+            "mangledName": "$s18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -6954,8 +8252,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvg",
-                "mangledName": "$s18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvg",
+                "usr": "s:18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvg",
+                "mangledName": "$s18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6978,8 +8276,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvs",
-                "mangledName": "$s18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvs",
+                "usr": "s:18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvs",
+                "mangledName": "$s18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -6996,8 +8294,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvM",
-                "mangledName": "$s18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvM",
+                "usr": "s:18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvM",
+                "mangledName": "$s18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7017,8 +8315,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsC23enableClipboardTrackingSbvp",
-            "mangledName": "$s18MobileIntelligence7OptionsC23enableClipboardTrackingSbvp",
+            "usr": "s:18MobileIntelligence7OptionsV23enableClipboardTrackingSbvp",
+            "mangledName": "$s18MobileIntelligence7OptionsV23enableClipboardTrackingSbvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -7040,8 +8338,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC23enableClipboardTrackingSbvg",
-                "mangledName": "$s18MobileIntelligence7OptionsC23enableClipboardTrackingSbvg",
+                "usr": "s:18MobileIntelligence7OptionsV23enableClipboardTrackingSbvg",
+                "mangledName": "$s18MobileIntelligence7OptionsV23enableClipboardTrackingSbvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -7064,8 +8362,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC23enableClipboardTrackingSbvs",
-                "mangledName": "$s18MobileIntelligence7OptionsC23enableClipboardTrackingSbvs",
+                "usr": "s:18MobileIntelligence7OptionsV23enableClipboardTrackingSbvs",
+                "mangledName": "$s18MobileIntelligence7OptionsV23enableClipboardTrackingSbvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -7082,8 +8380,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC23enableClipboardTrackingSbvM",
-                "mangledName": "$s18MobileIntelligence7OptionsC23enableClipboardTrackingSbvM",
+                "usr": "s:18MobileIntelligence7OptionsV23enableClipboardTrackingSbvM",
+                "mangledName": "$s18MobileIntelligence7OptionsV23enableClipboardTrackingSbvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7103,8 +8401,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsC19enableFieldTrackingSbvp",
-            "mangledName": "$s18MobileIntelligence7OptionsC19enableFieldTrackingSbvp",
+            "usr": "s:18MobileIntelligence7OptionsV19enableFieldTrackingSbvp",
+            "mangledName": "$s18MobileIntelligence7OptionsV19enableFieldTrackingSbvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -7126,8 +8424,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC19enableFieldTrackingSbvg",
-                "mangledName": "$s18MobileIntelligence7OptionsC19enableFieldTrackingSbvg",
+                "usr": "s:18MobileIntelligence7OptionsV19enableFieldTrackingSbvg",
+                "mangledName": "$s18MobileIntelligence7OptionsV19enableFieldTrackingSbvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -7150,8 +8448,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC19enableFieldTrackingSbvs",
-                "mangledName": "$s18MobileIntelligence7OptionsC19enableFieldTrackingSbvs",
+                "usr": "s:18MobileIntelligence7OptionsV19enableFieldTrackingSbvs",
+                "mangledName": "$s18MobileIntelligence7OptionsV19enableFieldTrackingSbvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -7168,8 +8466,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC19enableFieldTrackingSbvM",
-                "mangledName": "$s18MobileIntelligence7OptionsC19enableFieldTrackingSbvM",
+                "usr": "s:18MobileIntelligence7OptionsV19enableFieldTrackingSbvM",
+                "mangledName": "$s18MobileIntelligence7OptionsV19enableFieldTrackingSbvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7189,13 +8487,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsC11ENV_SANDBOXSSvpZ",
-            "mangledName": "$s18MobileIntelligence7OptionsC11ENV_SANDBOXSSvpZ",
+            "usr": "s:18MobileIntelligence7OptionsV11ENV_SANDBOXSSvpZ",
+            "mangledName": "$s18MobileIntelligence7OptionsV11ENV_SANDBOXSSvpZ",
             "moduleName": "MobileIntelligence",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -7215,14 +8512,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC11ENV_SANDBOXSSvgZ",
-                "mangledName": "$s18MobileIntelligence7OptionsC11ENV_SANDBOXSSvgZ",
+                "usr": "s:18MobileIntelligence7OptionsV11ENV_SANDBOXSSvgZ",
+                "mangledName": "$s18MobileIntelligence7OptionsV11ENV_SANDBOXSSvgZ",
                 "moduleName": "MobileIntelligence",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -7240,13 +8534,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsC14ENV_PRODUCTIONSSvpZ",
-            "mangledName": "$s18MobileIntelligence7OptionsC14ENV_PRODUCTIONSSvpZ",
+            "usr": "s:18MobileIntelligence7OptionsV14ENV_PRODUCTIONSSvpZ",
+            "mangledName": "$s18MobileIntelligence7OptionsV14ENV_PRODUCTIONSSvpZ",
             "moduleName": "MobileIntelligence",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -7266,14 +8559,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsC14ENV_PRODUCTIONSSvgZ",
-                "mangledName": "$s18MobileIntelligence7OptionsC14ENV_PRODUCTIONSSvgZ",
+                "usr": "s:18MobileIntelligence7OptionsV14ENV_PRODUCTIONSSvgZ",
+                "mangledName": "$s18MobileIntelligence7OptionsV14ENV_PRODUCTIONSSvgZ",
                 "moduleName": "MobileIntelligence",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -7287,12 +8577,12 @@
                 "kind": "TypeNominal",
                 "name": "Options",
                 "printedName": "MobileIntelligence.Options",
-                "usr": "s:18MobileIntelligence7OptionsC"
+                "usr": "s:18MobileIntelligence7OptionsV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MobileIntelligence7OptionsCACycfc",
-            "mangledName": "$s18MobileIntelligence7OptionsCACycfc",
+            "usr": "s:18MobileIntelligence7OptionsVACycfc",
+            "mangledName": "$s18MobileIntelligence7OptionsVACycfc",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "AccessControl"
@@ -7308,7 +8598,7 @@
                 "kind": "TypeNominal",
                 "name": "Options",
                 "printedName": "MobileIntelligence.Options",
-                "usr": "s:18MobileIntelligence7OptionsC"
+                "usr": "s:18MobileIntelligence7OptionsV"
               },
               {
                 "kind": "TypeNominal",
@@ -7388,21 +8678,20 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MobileIntelligence7OptionsC8clientId10sessionKey013parentSessionG004userE4Hash11environment24enableBehaviorBiometrics4flow07partnerE00M17ClipboardTracking0m5FieldS06region7baseUrlACSS_S4SSbS2SS2bAA6RegionOSStcfc",
-            "mangledName": "$s18MobileIntelligence7OptionsC8clientId10sessionKey013parentSessionG004userE4Hash11environment24enableBehaviorBiometrics4flow07partnerE00M17ClipboardTracking0m5FieldS06region7baseUrlACSS_S4SSbS2SS2bAA6RegionOSStcfc",
+            "usr": "s:18MobileIntelligence7OptionsV8clientId10sessionKey013parentSessionG004userE4Hash11environment24enableBehaviorBiometrics4flow07partnerE00M17ClipboardTracking0m5FieldS06region7baseUrlACSS_S4SSbS2SS2bAA6RegionOSStcfc",
+            "mangledName": "$s18MobileIntelligence7OptionsV8clientId10sessionKey013parentSessionG004userE4Hash11environment24enableBehaviorBiometrics4flow07partnerE00M17ClipboardTracking0m5FieldS06region7baseUrlACSS_S4SSbS2SS2bAA6RegionOSStcfc",
             "moduleName": "MobileIntelligence",
             "deprecated": true,
             "declAttributes": [
-              "Convenience",
               "AccessControl",
               "Available"
             ],
-            "init_kind": "Convenience"
+            "init_kind": "Designated"
           }
         ],
-        "declKind": "Class",
-        "usr": "s:18MobileIntelligence7OptionsC",
-        "mangledName": "$s18MobileIntelligence7OptionsC",
+        "declKind": "Struct",
+        "usr": "s:18MobileIntelligence7OptionsV",
+        "mangledName": "$s18MobileIntelligence7OptionsV",
         "moduleName": "MobileIntelligence",
         "declAttributes": [
           "AccessControl"
@@ -8349,12 +9638,12 @@
                 "kind": "TypeNominal",
                 "name": "Options",
                 "printedName": "MobileIntelligence.Options",
-                "usr": "s:18MobileIntelligence7OptionsC"
+                "usr": "s:18MobileIntelligence7OptionsV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC5buildAA0C0CyF",
-            "mangledName": "$s18MobileIntelligence14OptionsBuilderC5buildAA0C0CyF",
+            "usr": "s:18MobileIntelligence14OptionsBuilderC5buildAA0C0VyF",
+            "mangledName": "$s18MobileIntelligence14OptionsBuilderC5buildAA0C0VyF",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "AccessControl"
@@ -9167,13 +10456,13 @@
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Networking\/Networking.swift",
       "kind": "IntegerLiteral",
       "offset": 201,
-      "length": 3,
-      "value": "300"
+      "length": 2,
+      "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Networking\/Networking.swift",
       "kind": "IntegerLiteral",
-      "offset": 7519,
+      "offset": 8352,
       "length": 1,
       "value": "1"
     },
@@ -9277,52 +10566,80 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/GlobalVariables.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2215,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/GlobalVariables.swift",
       "kind": "StringLiteral",
-      "offset": 2349,
+      "offset": 2474,
       "length": 32,
       "value": "\"com.sardine.MobileIntelligence\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/GlobalVariables.swift",
       "kind": "StringLiteral",
-      "offset": 2508,
+      "offset": 2633,
       "length": 8,
-      "value": "\"1.0.25\""
+      "value": "\"1.0.27\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/GlobalVariables.swift",
       "kind": "StringLiteral",
-      "offset": 2612,
+      "offset": 2737,
       "length": 15,
       "value": "\"mdi.client.id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/GlobalVariables.swift",
       "kind": "StringLiteral",
-      "offset": 2663,
+      "offset": 2788,
       "length": 15,
       "value": "\"mdi.device.id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/GlobalVariables.swift",
       "kind": "StringLiteral",
-      "offset": 2784,
+      "offset": 2917,
       "length": 22,
       "value": "\"sardine_device_token\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/GlobalVariables.swift",
       "kind": "StringLiteral",
-      "offset": 2837,
+      "offset": 2970,
       "length": 27,
       "value": "\"sardine_event_last_update\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/GlobalVariables.swift",
       "kind": "StringLiteral",
-      "offset": 2909,
+      "offset": 3042,
       "length": 31,
       "value": "\"sardine_event_payload_backlog\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Networking\/DataCompression.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1946,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Networking\/DataCompression.swift",
+      "kind": "Array",
+      "offset": 3726,
+      "length": 3335,
+      "value": "[0x00000000, 0x77073096, 0xee0e612c, 0x990951ba, 0x076dc419, 0x706af48f, 0xe963a535, 0x9e6495a3, 0x0edb8832, 0x79dcb8a4, 0xe0d5e91e, 0x97d2d988, 0x09b64c2b, 0x7eb17cbd, 0xe7b82d07, 0x90bf1d91, 0x1db71064, 0x6ab020f2, 0xf3b97148, 0x84be41de, 0x1adad47d, 0x6ddde4eb, 0xf4d4b551, 0x83d385c7, 0x136c9856, 0x646ba8c0, 0xfd62f97a, 0x8a65c9ec, 0x14015c4f, 0x63066cd9, 0xfa0f3d63, 0x8d080df5, 0x3b6e20c8, 0x4c69105e, 0xd56041e4, 0xa2677172, 0x3c03e4d1, 0x4b04d447, 0xd20d85fd, 0xa50ab56b, 0x35b5a8fa, 0x42b2986c, 0xdbbbc9d6, 0xacbcf940, 0x32d86ce3, 0x45df5c75, 0xdcd60dcf, 0xabd13d59, 0x26d930ac, 0x51de003a, 0xc8d75180, 0xbfd06116, 0x21b4f4b5, 0x56b3c423, 0xcfba9599, 0xb8bda50f, 0x2802b89e, 0x5f058808, 0xc60cd9b2, 0xb10be924, 0x2f6f7c87, 0x58684c11, 0xc1611dab, 0xb6662d3d, 0x76dc4190, 0x01db7106, 0x98d220bc, 0xefd5102a, 0x71b18589, 0x06b6b51f, 0x9fbfe4a5, 0xe8b8d433, 0x7807c9a2, 0x0f00f934, 0x9609a88e, 0xe10e9818, 0x7f6a0dbb, 0x086d3d2d, 0x91646c97, 0xe6635c01, 0x6b6b51f4, 0x1c6c6162, 0x856530d8, 0xf262004e, 0x6c0695ed, 0x1b01a57b, 0x8208f4c1, 0xf50fc457, 0x65b0d9c6, 0x12b7e950, 0x8bbeb8ea, 0xfcb9887c, 0x62dd1ddf, 0x15da2d49, 0x8cd37cf3, 0xfbd44c65, 0x4db26158, 0x3ab551ce, 0xa3bc0074, 0xd4bb30e2, 0x4adfa541, 0x3dd895d7, 0xa4d1c46d, 0xd3d6f4fb, 0x4369e96a, 0x346ed9fc, 0xad678846, 0xda60b8d0, 0x44042d73, 0x33031de5, 0xaa0a4c5f, 0xdd0d7cc9, 0x5005713c, 0x270241aa, 0xbe0b1010, 0xc90c2086, 0x5768b525, 0x206f85b3, 0xb966d409, 0xce61e49f, 0x5edef90e, 0x29d9c998, 0xb0d09822, 0xc7d7a8b4, 0x59b33d17, 0x2eb40d81, 0xb7bd5c3b, 0xc0ba6cad, 0xedb88320, 0x9abfb3b6, 0x03b6e20c, 0x74b1d29a, 0xead54739, 0x9dd277af, 0x04db2615, 0x73dc1683, 0xe3630b12, 0x94643b84, 0x0d6d6a3e, 0x7a6a5aa8, 0xe40ecf0b, 0x9309ff9d, 0x0a00ae27, 0x7d079eb1, 0xf00f9344, 0x8708a3d2, 0x1e01f268, 0x6906c2fe, 0xf762575d, 0x806567cb, 0x196c3671, 0x6e6b06e7, 0xfed41b76, 0x89d32be0, 0x10da7a5a, 0x67dd4acc, 0xf9b9df6f, 0x8ebeeff9, 0x17b7be43, 0x60b08ed5, 0xd6d6a3e8, 0xa1d1937e, 0x38d8c2c4, 0x4fdff252, 0xd1bb67f1, 0xa6bc5767, 0x3fb506dd, 0x48b2364b, 0xd80d2bda, 0xaf0a1b4c, 0x36034af6, 0x41047a60, 0xdf60efc3, 0xa867df55, 0x316e8eef, 0x4669be79, 0xcb61b38c, 0xbc66831a, 0x256fd2a0, 0x5268e236, 0xcc0c7795, 0xbb0b4703, 0x220216b9, 0x5505262f, 0xc5ba3bbe, 0xb2bd0b28, 0x2bb45a92, 0x5cb36a04, 0xc2d7ffa7, 0xb5d0cf31, 0x2cd99e8b, 0x5bdeae1d, 0x9b64c2b0, 0xec63f226, 0x756aa39c, 0x026d930a, 0x9c0906a9, 0xeb0e363f, 0x72076785, 0x05005713, 0x95bf4a82, 0xe2b87a14, 0x7bb12bae, 0x0cb61b38, 0x92d28e9b, 0xe5d5be0d, 0x7cdcefb7, 0x0bdbdf21, 0x86d3d2d4, 0xf1d4e242, 0x68ddb3f8, 0x1fda836e, 0x81be16cd, 0xf6b9265b, 0x6fb077e1, 0x18b74777, 0x88085ae6, 0xff0f6a70, 0x66063bca, 0x11010b5c, 0x8f659eff, 0xf862ae69, 0x616bffd3, 0x166ccf45, 0xa00ae278, 0xd70dd2ee, 0x4e048354, 0x3903b3c2, 0xa7672661, 0xd06016f7, 0x4969474d, 0x3e6e77db, 0xaed16a4a, 0xd9d65adc, 0x40df0b66, 0x37d83bf0, 0xa9bcae53, 0xdebb9ec5, 0x47b2cf7f, 0x30b5ffe9, 0xbdbdf21c, 0xcabac28a, 0x53b39330, 0x24b4a3a6, 0xbad03605, 0xcdd70693, 0x54de5729, 0x23d967bf, 0xb3667a2e, 0xc4614ab8, 0x5d681b02, 0x2a6f2b94, 0xb40bbe37, 0xc30c8ea1, 0x5a05df1b, 0x2d02ef8d]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Networking\/DataCompression.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7642,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/MobileProvision.swift",
@@ -9488,1708 +10805,2016 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "BooleanLiteral",
-      "offset": 4722,
+      "offset": 4922,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 6814,
+      "offset": 7014,
       "length": 19,
       "value": "\"simulator\/sandbox\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 6891,
+      "offset": 7091,
       "length": 8,
       "value": "\"iPod 1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 6931,
+      "offset": 7131,
       "length": 8,
       "value": "\"iPod 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 6971,
+      "offset": 7171,
       "length": 8,
       "value": "\"iPod 3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7011,
+      "offset": 7211,
       "length": 8,
       "value": "\"iPod 4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7051,
+      "offset": 7251,
       "length": 8,
       "value": "\"iPod 5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7091,
+      "offset": 7291,
       "length": 8,
       "value": "\"iPod 6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7131,
+      "offset": 7331,
       "length": 8,
       "value": "\"iPod 7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7197,
+      "offset": 7397,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7237,
+      "offset": 7437,
       "length": 8,
       "value": "\"iPad 3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7277,
+      "offset": 7477,
       "length": 8,
       "value": "\"iPad 4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7317,
+      "offset": 7517,
       "length": 11,
       "value": "\"iPad Air \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7360,
+      "offset": 7560,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7404,
+      "offset": 7604,
       "length": 12,
       "value": "\"iPad Air 3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7448,
+      "offset": 7648,
       "length": 12,
       "value": "\"iPad Air 4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7492,
+      "offset": 7692,
+      "length": 12,
+      "value": "\"iPad Air 5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 7736,
       "length": 8,
       "value": "\"iPad 5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7544,
+      "offset": 7788,
       "length": 8,
       "value": "\"iPad 6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7596,
+      "offset": 7840,
       "length": 8,
       "value": "\"iPad 7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7648,
+      "offset": 7892,
       "length": 8,
       "value": "\"iPad 8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7700,
+      "offset": 7944,
       "length": 8,
       "value": "\"iPad 9\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7783,
+      "offset": 7996,
+      "length": 9,
+      "value": "\"iPad 10\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 8080,
       "length": 11,
       "value": "\"iPad Mini\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7826,
+      "offset": 8123,
       "length": 13,
       "value": "\"iPad Mini 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7871,
+      "offset": 8168,
       "length": 13,
       "value": "\"iPad Mini 3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7916,
+      "offset": 8213,
       "length": 13,
       "value": "\"iPad Mini 4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7961,
+      "offset": 8258,
       "length": 13,
       "value": "\"iPad Mini 5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8006,
+      "offset": 8303,
       "length": 13,
       "value": "\"iPad Mini 6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8081,
+      "offset": 8378,
       "length": 16,
       "value": "\"iPad Pro 9.7\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8129,
+      "offset": 8426,
       "length": 17,
       "value": "\"iPad Pro 10.5\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8178,
+      "offset": 8475,
       "length": 15,
       "value": "\"iPad Pro 11\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8225,
+      "offset": 8522,
+      "length": 23,
+      "value": "\"iPad Pro 11\" 2nd gen\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 8577,
+      "length": 23,
+      "value": "\"iPad Pro 11\" 3rd gen\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 8632,
       "length": 17,
       "value": "\"iPad Pro 12.9\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8274,
+      "offset": 8681,
       "length": 19,
       "value": "\"iPad Pro 2 12.9\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8325,
+      "offset": 8732,
       "length": 19,
       "value": "\"iPad Pro 3 12.9\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8376,
+      "offset": 8783,
       "length": 19,
       "value": "\"iPad Pro 4 12.9\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8427,
+      "offset": 8834,
       "length": 19,
       "value": "\"iPad Pro 5 12.9\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8506,
+      "offset": 8913,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8548,
+      "offset": 8955,
       "length": 11,
       "value": "\"iPhone 4S\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8591,
+      "offset": 8998,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8633,
+      "offset": 9040,
       "length": 11,
       "value": "\"iPhone 5S\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8676,
+      "offset": 9083,
       "length": 11,
       "value": "\"iPhone 5C\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8719,
+      "offset": 9126,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8761,
+      "offset": 9168,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8808,
+      "offset": 9215,
       "length": 11,
       "value": "\"iPhone 6S\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8851,
+      "offset": 9258,
       "length": 16,
       "value": "\"iPhone 6S Plus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8899,
+      "offset": 9306,
       "length": 11,
       "value": "\"iPhone SE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8942,
+      "offset": 9349,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8984,
+      "offset": 9391,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9031,
+      "offset": 9438,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9073,
+      "offset": 9480,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9120,
+      "offset": 9527,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9162,
+      "offset": 9569,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9205,
+      "offset": 9612,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9252,
+      "offset": 9659,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9295,
+      "offset": 9702,
       "length": 11,
       "value": "\"iPhone 11\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9338,
+      "offset": 9745,
       "length": 15,
       "value": "\"iPhone 11 Pro\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9385,
+      "offset": 9792,
       "length": 19,
       "value": "\"iPhone 11 Pro Max\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9436,
+      "offset": 9843,
       "length": 19,
       "value": "\"iPhone SE 2nd gen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9487,
+      "offset": 9894,
       "length": 16,
-      "value": "\"iPhone 12 mini\""
+      "value": "\"iPhone 12 Mini\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9535,
+      "offset": 9942,
       "length": 11,
       "value": "\"iPhone 12\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9578,
+      "offset": 9985,
       "length": 15,
       "value": "\"iPhone 12 Pro\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9625,
+      "offset": 10032,
       "length": 19,
       "value": "\"iPhone 12 Pro Max\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9676,
+      "offset": 10083,
       "length": 16,
       "value": "\"iPhone 13 Mini\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9724,
+      "offset": 10131,
       "length": 11,
       "value": "\"iPhone 13\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9767,
+      "offset": 10174,
       "length": 15,
       "value": "\"iPhone 13 Pro\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9814,
+      "offset": 10221,
       "length": 19,
       "value": "\"iPhone 13 Pro Max\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9895,
+      "offset": 10272,
+      "length": 19,
+      "value": "\"iPhone SE 3nd gen\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10323,
+      "length": 11,
+      "value": "\"iPhone 14\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10366,
+      "length": 16,
+      "value": "\"iPhone 14 Plus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10414,
+      "length": 15,
+      "value": "\"iPhone 14 Pro\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10461,
+      "length": 19,
+      "value": "\"iPhone 14 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10512,
+      "length": 11,
+      "value": "\"iPhone 15\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10555,
+      "length": 16,
+      "value": "\"iPhone 15 Plus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10603,
+      "length": 15,
+      "value": "\"iPhone 15 Pro\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10650,
+      "length": 19,
+      "value": "\"iPhone 15 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10736,
+      "length": 18,
+      "value": "\"Apple Watch 1gen\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10787,
+      "length": 22,
+      "value": "\"Apple Watch Series 1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10842,
+      "length": 22,
+      "value": "\"Apple Watch Series 2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10897,
+      "length": 22,
+      "value": "\"Apple Watch Series 3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10952,
+      "length": 22,
+      "value": "\"Apple Watch Series 4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 11007,
+      "length": 22,
+      "value": "\"Apple Watch Series 5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 11062,
+      "length": 29,
+      "value": "\"Apple Watch Special Edition\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 11124,
+      "length": 22,
+      "value": "\"Apple Watch Series 6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 11179,
+      "length": 22,
+      "value": "\"Apple Watch Series 7\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 11263,
       "length": 15,
       "value": "\"Apple TV 1gen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9942,
+      "offset": 11310,
       "length": 15,
       "value": "\"Apple TV 2gen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9989,
+      "offset": 11357,
       "length": 15,
       "value": "\"Apple TV 3gen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10036,
+      "offset": 11404,
       "length": 15,
       "value": "\"Apple TV 4gen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10083,
+      "offset": 11451,
       "length": 13,
       "value": "\"Apple TV 4K\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10128,
+      "offset": 11496,
       "length": 18,
       "value": "\"Apple TV 4K 2gen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10178,
+      "offset": 11556,
       "length": 16,
       "value": "\"?unrecognized?\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 6814,
+      "offset": 7014,
       "length": 19,
       "value": "\"simulator\/sandbox\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 6891,
+      "offset": 7091,
       "length": 8,
       "value": "\"iPod 1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 6931,
+      "offset": 7131,
       "length": 8,
       "value": "\"iPod 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 6971,
+      "offset": 7171,
       "length": 8,
       "value": "\"iPod 3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7011,
+      "offset": 7211,
       "length": 8,
       "value": "\"iPod 4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7051,
+      "offset": 7251,
       "length": 8,
       "value": "\"iPod 5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7091,
+      "offset": 7291,
       "length": 8,
       "value": "\"iPod 6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7131,
+      "offset": 7331,
       "length": 8,
       "value": "\"iPod 7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7197,
+      "offset": 7397,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7237,
+      "offset": 7437,
       "length": 8,
       "value": "\"iPad 3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7277,
+      "offset": 7477,
       "length": 8,
       "value": "\"iPad 4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7317,
+      "offset": 7517,
       "length": 11,
       "value": "\"iPad Air \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7360,
+      "offset": 7560,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7404,
+      "offset": 7604,
       "length": 12,
       "value": "\"iPad Air 3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7448,
+      "offset": 7648,
       "length": 12,
       "value": "\"iPad Air 4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7492,
+      "offset": 7692,
+      "length": 12,
+      "value": "\"iPad Air 5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 7736,
       "length": 8,
       "value": "\"iPad 5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7544,
+      "offset": 7788,
       "length": 8,
       "value": "\"iPad 6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7596,
+      "offset": 7840,
       "length": 8,
       "value": "\"iPad 7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7648,
+      "offset": 7892,
       "length": 8,
       "value": "\"iPad 8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7700,
+      "offset": 7944,
       "length": 8,
       "value": "\"iPad 9\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7783,
+      "offset": 7996,
+      "length": 9,
+      "value": "\"iPad 10\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 8080,
       "length": 11,
       "value": "\"iPad Mini\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7826,
+      "offset": 8123,
       "length": 13,
       "value": "\"iPad Mini 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7871,
+      "offset": 8168,
       "length": 13,
       "value": "\"iPad Mini 3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7916,
+      "offset": 8213,
       "length": 13,
       "value": "\"iPad Mini 4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 7961,
+      "offset": 8258,
       "length": 13,
       "value": "\"iPad Mini 5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8006,
+      "offset": 8303,
       "length": 13,
       "value": "\"iPad Mini 6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8081,
+      "offset": 8378,
       "length": 16,
       "value": "\"iPad Pro 9.7\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8129,
+      "offset": 8426,
       "length": 17,
       "value": "\"iPad Pro 10.5\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8178,
+      "offset": 8475,
       "length": 15,
       "value": "\"iPad Pro 11\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8225,
+      "offset": 8522,
+      "length": 23,
+      "value": "\"iPad Pro 11\" 2nd gen\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 8577,
+      "length": 23,
+      "value": "\"iPad Pro 11\" 3rd gen\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 8632,
       "length": 17,
       "value": "\"iPad Pro 12.9\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8274,
+      "offset": 8681,
       "length": 19,
       "value": "\"iPad Pro 2 12.9\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8325,
+      "offset": 8732,
       "length": 19,
       "value": "\"iPad Pro 3 12.9\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8376,
+      "offset": 8783,
       "length": 19,
       "value": "\"iPad Pro 4 12.9\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8427,
+      "offset": 8834,
       "length": 19,
       "value": "\"iPad Pro 5 12.9\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8506,
+      "offset": 8913,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8548,
+      "offset": 8955,
       "length": 11,
       "value": "\"iPhone 4S\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8591,
+      "offset": 8998,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8633,
+      "offset": 9040,
       "length": 11,
       "value": "\"iPhone 5S\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8676,
+      "offset": 9083,
       "length": 11,
       "value": "\"iPhone 5C\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8719,
+      "offset": 9126,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8761,
+      "offset": 9168,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8808,
+      "offset": 9215,
       "length": 11,
       "value": "\"iPhone 6S\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8851,
+      "offset": 9258,
       "length": 16,
       "value": "\"iPhone 6S Plus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8899,
+      "offset": 9306,
       "length": 11,
       "value": "\"iPhone SE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8942,
+      "offset": 9349,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 8984,
+      "offset": 9391,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9031,
+      "offset": 9438,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9073,
+      "offset": 9480,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9120,
+      "offset": 9527,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9162,
+      "offset": 9569,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9205,
+      "offset": 9612,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9252,
+      "offset": 9659,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9295,
+      "offset": 9702,
       "length": 11,
       "value": "\"iPhone 11\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9338,
+      "offset": 9745,
       "length": 15,
       "value": "\"iPhone 11 Pro\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9385,
+      "offset": 9792,
       "length": 19,
       "value": "\"iPhone 11 Pro Max\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9436,
+      "offset": 9843,
       "length": 19,
       "value": "\"iPhone SE 2nd gen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9487,
+      "offset": 9894,
       "length": 16,
-      "value": "\"iPhone 12 mini\""
+      "value": "\"iPhone 12 Mini\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9535,
+      "offset": 9942,
       "length": 11,
       "value": "\"iPhone 12\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9578,
+      "offset": 9985,
       "length": 15,
       "value": "\"iPhone 12 Pro\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9625,
+      "offset": 10032,
       "length": 19,
       "value": "\"iPhone 12 Pro Max\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9676,
+      "offset": 10083,
       "length": 16,
       "value": "\"iPhone 13 Mini\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9724,
+      "offset": 10131,
       "length": 11,
       "value": "\"iPhone 13\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9767,
+      "offset": 10174,
       "length": 15,
       "value": "\"iPhone 13 Pro\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9814,
+      "offset": 10221,
       "length": 19,
       "value": "\"iPhone 13 Pro Max\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9895,
+      "offset": 10272,
+      "length": 19,
+      "value": "\"iPhone SE 3nd gen\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10323,
+      "length": 11,
+      "value": "\"iPhone 14\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10366,
+      "length": 16,
+      "value": "\"iPhone 14 Plus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10414,
+      "length": 15,
+      "value": "\"iPhone 14 Pro\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10461,
+      "length": 19,
+      "value": "\"iPhone 14 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10512,
+      "length": 11,
+      "value": "\"iPhone 15\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10555,
+      "length": 16,
+      "value": "\"iPhone 15 Plus\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10603,
+      "length": 15,
+      "value": "\"iPhone 15 Pro\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10650,
+      "length": 19,
+      "value": "\"iPhone 15 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10736,
+      "length": 18,
+      "value": "\"Apple Watch 1gen\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10787,
+      "length": 22,
+      "value": "\"Apple Watch Series 1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10842,
+      "length": 22,
+      "value": "\"Apple Watch Series 2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10897,
+      "length": 22,
+      "value": "\"Apple Watch Series 3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 10952,
+      "length": 22,
+      "value": "\"Apple Watch Series 4\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 11007,
+      "length": 22,
+      "value": "\"Apple Watch Series 5\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 11062,
+      "length": 29,
+      "value": "\"Apple Watch Special Edition\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 11124,
+      "length": 22,
+      "value": "\"Apple Watch Series 6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 11179,
+      "length": 22,
+      "value": "\"Apple Watch Series 7\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 11263,
       "length": 15,
       "value": "\"Apple TV 1gen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9942,
+      "offset": 11310,
       "length": 15,
       "value": "\"Apple TV 2gen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 9989,
+      "offset": 11357,
       "length": 15,
       "value": "\"Apple TV 3gen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10036,
+      "offset": 11404,
       "length": 15,
       "value": "\"Apple TV 4gen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10083,
+      "offset": 11451,
       "length": 13,
       "value": "\"Apple TV 4K\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10128,
+      "offset": 11496,
       "length": 18,
       "value": "\"Apple TV 4K 2gen\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 10178,
+      "offset": 11556,
       "length": 16,
       "value": "\"?unrecognized?\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 21177,
+      "offset": 24540,
       "length": 28,
       "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 21429,
+      "offset": 24792,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "Array",
-      "offset": 21550,
+      "offset": 24913,
       "length": 7,
       "value": "[\"en0\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "Array",
-      "offset": 21585,
+      "offset": 24948,
       "length": 21,
       "value": "[\"en2\", \"en3\", \"en4\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "Array",
-      "offset": 21637,
+      "offset": 25000,
       "length": 41,
       "value": "[\"pdp_ip0\", \"pdp_ip1\", \"pdp_ip2\", \"pdp_ip3\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24227,
+      "offset": 27582,
       "length": 9,
       "value": "\"iPad2,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24238,
+      "offset": 27593,
       "length": 9,
       "value": "\"iPad2,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24249,
+      "offset": 27604,
       "length": 9,
       "value": "\"iPad2,3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24260,
+      "offset": 27615,
       "length": 9,
       "value": "\"iPad2,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 24312,
+      "offset": 27667,
       "length": 3,
       "value": "132"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24342,
+      "offset": 27697,
       "length": 9,
       "value": "\"iPad2,5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24353,
+      "offset": 27708,
       "length": 9,
       "value": "\"iPad2,6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24364,
+      "offset": 27719,
       "length": 9,
       "value": "\"iPad2,7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 24430,
+      "offset": 27785,
       "length": 3,
       "value": "163"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24460,
+      "offset": 27815,
       "length": 9,
       "value": "\"iPad3,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24471,
+      "offset": 27826,
       "length": 9,
       "value": "\"iPad3,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24482,
+      "offset": 27837,
       "length": 9,
       "value": "\"iPad3,3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24552,
+      "offset": 27907,
       "length": 9,
       "value": "\"iPad3,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24563,
+      "offset": 27918,
       "length": 9,
       "value": "\"iPad3,5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24574,
+      "offset": 27929,
       "length": 9,
       "value": "\"iPad3,6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24644,
+      "offset": 27999,
       "length": 9,
       "value": "\"iPad4,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24655,
+      "offset": 28010,
       "length": 9,
       "value": "\"iPad4,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24666,
+      "offset": 28021,
       "length": 9,
       "value": "\"iPad4,3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24725,
+      "offset": 28080,
       "length": 9,
       "value": "\"iPad5,3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24736,
+      "offset": 28091,
       "length": 9,
       "value": "\"iPad5,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24808,
+      "offset": 28163,
       "length": 9,
       "value": "\"iPad6,7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24819,
+      "offset": 28174,
       "length": 9,
       "value": "\"iPad6,8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24901,
+      "offset": 28256,
       "length": 9,
       "value": "\"iPad6,3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24912,
+      "offset": 28267,
       "length": 9,
       "value": "\"iPad6,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 24993,
+      "offset": 28348,
       "length": 10,
       "value": "\"iPad6,11\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25005,
+      "offset": 28360,
       "length": 10,
       "value": "\"iPad6,12\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25085,
+      "offset": 28440,
       "length": 9,
       "value": "\"iPad7,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25096,
+      "offset": 28451,
       "length": 9,
       "value": "\"iPad7,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25194,
+      "offset": 28549,
       "length": 9,
       "value": "\"iPad7,3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25205,
+      "offset": 28560,
       "length": 9,
       "value": "\"iPad7,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25287,
+      "offset": 28642,
       "length": 9,
       "value": "\"iPad7,5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25298,
+      "offset": 28653,
       "length": 9,
       "value": "\"iPad7,6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25379,
+      "offset": 28734,
       "length": 10,
       "value": "\"iPad7,11\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25391,
+      "offset": 28746,
       "length": 10,
       "value": "\"iPad7,12\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25471,
+      "offset": 28826,
       "length": 9,
       "value": "\"iPad8,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25482,
+      "offset": 28837,
       "length": 9,
       "value": "\"iPad8,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25493,
+      "offset": 28848,
       "length": 9,
       "value": "\"iPad8,3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25504,
+      "offset": 28859,
       "length": 9,
       "value": "\"iPad8,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25562,
+      "offset": 28917,
       "length": 9,
       "value": "\"iPad8,5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25573,
+      "offset": 28928,
       "length": 9,
       "value": "\"iPad8,6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25584,
+      "offset": 28939,
       "length": 9,
       "value": "\"iPad8,7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25595,
+      "offset": 28950,
       "length": 9,
       "value": "\"iPad8,8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25671,
+      "offset": 29026,
       "length": 9,
       "value": "\"iPad8,9\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25682,
+      "offset": 29037,
       "length": 10,
       "value": "\"iPad8,10\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25778,
+      "offset": 29133,
       "length": 10,
       "value": "\"iPad8,11\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25790,
+      "offset": 29145,
       "length": 10,
       "value": "\"iPad8,12\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25887,
+      "offset": 29242,
       "length": 10,
       "value": "\"iPad11,3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 25899,
+      "offset": 29254,
       "length": 10,
       "value": "\"iPad11,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 25991,
+      "offset": 29346,
       "length": 3,
       "value": "264"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26021,
+      "offset": 29376,
       "length": 11,
       "value": "\"iPhone4,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26103,
+      "offset": 29458,
       "length": 11,
       "value": "\"iPhone5,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26116,
+      "offset": 29471,
       "length": 11,
       "value": "\"iPhone5,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26184,
+      "offset": 29539,
       "length": 11,
       "value": "\"iPhone5,3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26197,
+      "offset": 29552,
       "length": 11,
       "value": "\"iPhone5,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26266,
+      "offset": 29621,
       "length": 11,
       "value": "\"iPhone6,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26279,
+      "offset": 29634,
       "length": 11,
       "value": "\"iPhone6,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26348,
+      "offset": 29703,
       "length": 11,
       "value": "\"iPhone8,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26430,
+      "offset": 29785,
       "length": 11,
       "value": "\"iPhone7,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26511,
+      "offset": 29866,
       "length": 11,
       "value": "\"iPhone8,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26593,
+      "offset": 29948,
       "length": 11,
       "value": "\"iPhone9,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26606,
+      "offset": 29961,
       "length": 11,
       "value": "\"iPhone9,3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26674,
+      "offset": 30029,
       "length": 12,
       "value": "\"iPhone10,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26688,
+      "offset": 30043,
       "length": 12,
       "value": "\"iPhone10,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26755,
+      "offset": 30110,
       "length": 12,
       "value": "\"iPhone11,8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26837,
+      "offset": 30192,
       "length": 12,
       "value": "\"iPhone12,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 26919,
+      "offset": 30274,
       "length": 12,
       "value": "\"iPhone12,8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27016,
+      "offset": 30371,
       "length": 9,
       "value": "\"iPod5,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27114,
+      "offset": 30469,
       "length": 9,
       "value": "\"iPod7,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27212,
+      "offset": 30567,
       "length": 9,
       "value": "\"iPod9,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27310,
+      "offset": 30665,
       "length": 9,
       "value": "\"iPad4,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27321,
+      "offset": 30676,
       "length": 9,
       "value": "\"iPad4,5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27332,
+      "offset": 30687,
       "length": 9,
       "value": "\"iPad4,6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27394,
+      "offset": 30749,
       "length": 9,
       "value": "\"iPad4,7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27405,
+      "offset": 30760,
       "length": 9,
       "value": "\"iPad4,8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27416,
+      "offset": 30771,
       "length": 9,
       "value": "\"iPad4,9\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27478,
+      "offset": 30833,
       "length": 9,
       "value": "\"iPad5,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27489,
+      "offset": 30844,
       "length": 9,
       "value": "\"iPad5,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27562,
+      "offset": 30917,
       "length": 10,
       "value": "\"iPad11,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27574,
+      "offset": 30929,
       "length": 10,
       "value": "\"iPad11,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 27652,
+      "offset": 31007,
       "length": 3,
       "value": "326"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27682,
+      "offset": 31037,
       "length": 11,
       "value": "\"iPhone7,1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27768,
+      "offset": 31123,
       "length": 11,
       "value": "\"iPhone8,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27855,
+      "offset": 31210,
       "length": 11,
       "value": "\"iPhone9,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27868,
+      "offset": 31223,
       "length": 11,
       "value": "\"iPhone9,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27941,
+      "offset": 31296,
       "length": 12,
       "value": "\"iPhone10,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 27955,
+      "offset": 31310,
       "length": 12,
       "value": "\"iPhone10,5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 28033,
+      "offset": 31388,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 28063,
+      "offset": 31418,
       "length": 12,
       "value": "\"iPhone10,3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 28077,
+      "offset": 31432,
       "length": 12,
       "value": "\"iPhone10,6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 28144,
+      "offset": 31499,
       "length": 12,
       "value": "\"iPhone11,2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 28226,
+      "offset": 31581,
       "length": 12,
       "value": "\"iPhone12,3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 28312,
+      "offset": 31667,
       "length": 12,
       "value": "\"iPhone11,4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 28326,
+      "offset": 31681,
       "length": 12,
       "value": "\"iPhone11,6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "StringLiteral",
-      "offset": 28398,
+      "offset": 31753,
       "length": 12,
       "value": "\"iPhone12,5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 28494,
+      "offset": 31849,
       "length": 3,
       "value": "458"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 30497,
+      "offset": 33852,
       "length": 1,
       "value": "2"
     },
@@ -11287,133 +12912,119 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "StringLiteral",
-      "offset": 917,
+      "offset": 921,
       "length": 16,
       "value": "\"foregroundView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "StringLiteral",
-      "offset": 964,
+      "offset": 968,
       "length": 20,
       "value": "\"numberOfActiveBars\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1006,
+      "offset": 1010,
       "length": 11,
       "value": "\"statusBar\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1045,
+      "offset": 1049,
       "length": 17,
       "value": "\"wifiStrengthRaw\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "StringLiteral",
-      "offset": 917,
+      "offset": 921,
       "length": 16,
       "value": "\"foregroundView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "StringLiteral",
-      "offset": 964,
+      "offset": 968,
       "length": 20,
       "value": "\"numberOfActiveBars\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1006,
+      "offset": 1010,
       "length": 11,
       "value": "\"statusBar\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1045,
+      "offset": 1049,
       "length": 17,
       "value": "\"wifiStrengthRaw\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 3424,
+      "offset": 3410,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 3462,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3501,
+      "offset": 3449,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3528,
+      "offset": 3476,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3562,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 3597,
+      "offset": 3511,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 3636,
+      "offset": 3550,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 3719,
+      "offset": 3633,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3743,
+      "offset": 3657,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/EventHelper.swift",
       "kind": "Array",
-      "offset": 11045,
+      "offset": 13734,
       "length": 112,
       "value": "[\"tap\", \"tun\", \"ppp\", \"ipsec\", \"utun\", \"ikev2\", \"l2pt\", \"utun4\", \"utun1\", \"utun2\", \"utun3\", \"ike\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3034,
+      "offset": 3097,
       "length": 2,
       "value": "\"\""
     },
@@ -11469,126 +13080,126 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "BooleanLiteral",
-      "offset": 510,
+      "offset": 511,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "BooleanLiteral",
-      "offset": 562,
+      "offset": 563,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "BooleanLiteral",
-      "offset": 611,
+      "offset": 612,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "BooleanLiteral",
-      "offset": 664,
+      "offset": 665,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 703,
+      "offset": 704,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 789,
+      "offset": 790,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 892,
+      "offset": 893,
       "length": 13,
       "value": "\"development\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 942,
+      "offset": 943,
       "length": 9,
       "value": "\"sandbox\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 991,
+      "offset": 992,
       "length": 12,
       "value": "\"production\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "BooleanLiteral",
-      "offset": 1347,
+      "offset": 1336,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "BooleanLiteral",
-      "offset": 1398,
+      "offset": 1387,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 1456,
+      "offset": 1445,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 2100,
+      "offset": 2089,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 2145,
+      "offset": 2134,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 2178,
+      "offset": 2167,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 2275,
+      "offset": 2264,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 2306,
+      "offset": 2295,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 2346,
+      "offset": 2335,
       "length": 2,
       "value": "\"\""
     }
