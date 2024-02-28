@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "MobileIntelligence",
     platforms: [
-        .iOS(.v15)
+        .iOS(.v12)
     ],
     products: [
         .library(
