@@ -44,14 +44,15 @@ extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
 }
-@_hasMissingDesignatedInitializers public class MobileIntelligence {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(MobileIntelligence) public class MobileIntelligence : ObjectiveC.NSObject {
   @discardableResult
-  convenience public init(withOptions options: Options)
-  public class func trackPage(pageName: Swift.String)
-  public class func trackField(forKey key: Swift.String, text: Swift.String)
+  convenience required public init(withOptions options: Options)
+  @objc public class func setupSdk(options: Options)
+  @objc public class func trackPage(pageName: Swift.String)
+  @objc public class func trackField(forKey key: Swift.String, text: Swift.String)
   public class func trackFieldFocus(forKey key: Swift.String, hasFocus: Swift.Bool)
-  public class func submitData(completion: @escaping ((Response) -> ()))
-  public class func updateOptions(options: UpdateOptions, completion: ((Response) -> ())? = nil)
+  @objc public class func submitData(completion: @escaping ((Response) -> ()))
+  @objc public class func updateOptions(options: UpdateOptions, completion: ((Response) -> ())? = nil)
   public class func getSessionKey() -> Swift.String
   public class func silentAuth(forNumber phoneNumber: Swift.String, correlationId: Swift.String, completion: @escaping ((Swift.Bool) -> ()))
   @objc deinit
@@ -81,11 +82,10 @@ public struct CorIdResponse : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
-public struct Response : Swift.Codable {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Response) public class Response : ObjectiveC.NSObject {
   public var status: Swift.Bool?
   public var message: Swift.String?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  @objc deinit
 }
 public struct DevicesResponse : Swift.Codable {
   public var id: Swift.String?
@@ -149,7 +149,7 @@ public enum Region : Swift.String {
     get
   }
 }
-public struct Options {
+@_inheritsConvenienceInitializers @objc(Options) public class Options : ObjectiveC.NSObject {
   public var clientId: Swift.String?
   public var sessionKey: Swift.String?
   public var parentSessionKey: Swift.String?
@@ -162,37 +162,39 @@ public struct Options {
   public var enableFieldTracking: Swift.Bool
   public static let ENV_SANDBOX: Swift.String
   public static let ENV_PRODUCTION: Swift.String
-  public init()
+  @objc override dynamic public init()
   @available(*, deprecated, message: "Please use OptionsBuilder")
-  public init(clientId: Swift.String, sessionKey: Swift.String, parentSessionKey: Swift.String, userIdHash: Swift.String, environment: Swift.String, enableBehaviorBiometrics: Swift.Bool, flow: Swift.String, partnerId: Swift.String, enableClipboardTracking: Swift.Bool = false, enableFieldTracking: Swift.Bool = true, region: Region = Region.DEFAULT, baseUrl: Swift.String = "")
+  convenience public init(clientId: Swift.String, sessionKey: Swift.String, parentSessionKey: Swift.String, userIdHash: Swift.String, environment: Swift.String, enableBehaviorBiometrics: Swift.Bool, flow: Swift.String, partnerId: Swift.String, enableClipboardTracking: Swift.Bool = false, enableFieldTracking: Swift.Bool = true, region: Region = Region.DEFAULT, baseUrl: Swift.String = "")
+  @objc deinit
 }
-public struct UpdateOptions : Swift.Codable {
-  public var userIdHash: Swift.String?
-  public var sessionKey: Swift.String
-  public var parentSessionKey: Swift.String
-  public var flow: Swift.String
-  public init()
-  public init(sessionKey: Swift.String = "", parentSessionKey: Swift.String = "", userIdHash: Swift.String?, flow: Swift.String = "")
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+@_inheritsConvenienceInitializers @objc(UpdateOptions) public class UpdateOptions : ObjectiveC.NSObject {
+  @objc public var userIdHash: Swift.String?
+  @objc public var sessionKey: Swift.String
+  @objc public var parentSessionKey: Swift.String
+  @objc public var flow: Swift.String
+  public var enableBehaviorBiometrics: Swift.Bool?
+  @objc override dynamic public init()
+  convenience public init(sessionKey: Swift.String = "", parentSessionKey: Swift.String = "", userIdHash: Swift.String?, flow: Swift.String = "", enableBehaviorBiometrics: Swift.Bool? = nil)
+  @objc deinit
 }
-public class OptionsBuilder {
-  public init()
-  public func setClientId(with clientId: Swift.String) -> OptionsBuilder
-  public func setSessionKey(with sessionKey: Swift.String) -> OptionsBuilder
-  public func setUserIdHash(with userIdHash: Swift.String) -> OptionsBuilder
-  public func setEnvironment(with environment: Swift.String) -> OptionsBuilder
-  public func setFlow(with flow: Swift.String) -> OptionsBuilder
-  public func setPartnerId(with partnerId: Swift.String) -> OptionsBuilder
-  public func enableBehaviorBiometrics(with enableBehaviorBiometrics: Swift.Bool) -> OptionsBuilder
-  public func enableClipboardTracking(with enableClipboardTracking: Swift.Bool) -> OptionsBuilder
-  public func enableFieldTracking(with enableFieldTracking: Swift.Bool) -> OptionsBuilder
-  public func setShouldAutoSubmitOnInit(with shouldAutoSubmitOnInit: Swift.Bool) -> OptionsBuilder
-  public func setSourcePlatform(with sourcePlatform: Swift.String) -> OptionsBuilder
-  public func setParentSessionKey(with parentSessionKey: Swift.String) -> OptionsBuilder
+@_inheritsConvenienceInitializers @objc(OptionBuilder) public class OptionsBuilder : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func setClientId(with clientId: Swift.String) -> OptionsBuilder
+  @objc public func setSessionKey(with sessionKey: Swift.String) -> OptionsBuilder
+  @objc public func setUserIdHash(with userIdHash: Swift.String) -> OptionsBuilder
+  @objc public func setEnvironment(with environment: Swift.String) -> OptionsBuilder
+  @objc public func setFlow(with flow: Swift.String) -> OptionsBuilder
+  @objc public func setPartnerId(with partnerId: Swift.String) -> OptionsBuilder
+  @objc public func enableBehaviorBiometrics(with enableBehaviorBiometrics: Swift.Bool) -> OptionsBuilder
+  @objc public func enableClipboardTracking(with enableClipboardTracking: Swift.Bool) -> OptionsBuilder
+  @objc public func enableFieldTracking(with enableFieldTracking: Swift.Bool) -> OptionsBuilder
+  @objc public func setShouldAutoSubmitOnInit(with shouldAutoSubmitOnInit: Swift.Bool) -> OptionsBuilder
+  @objc public func setSourcePlatform(with sourcePlatform: Swift.String) -> OptionsBuilder
+  @objc public func setParentSessionKey(with parentSessionKey: Swift.String) -> OptionsBuilder
   public func setRegion(with region: Region) -> OptionsBuilder
-  public func setBaseUrl(with baseUrl: Swift.String) -> OptionsBuilder
-  public func build() -> Options
+  @objc public func setRegion(with region: Swift.String) -> OptionsBuilder
+  @objc public func setBaseUrl(with baseUrl: Swift.String) -> OptionsBuilder
+  @objc public func build() -> Options
   @objc deinit
 }
 extension TextFieldType : Swift.Equatable {}

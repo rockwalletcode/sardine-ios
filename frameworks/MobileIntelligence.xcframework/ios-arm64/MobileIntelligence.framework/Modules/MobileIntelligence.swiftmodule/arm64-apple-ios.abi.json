@@ -366,26 +366,56 @@
                 "kind": "TypeNominal",
                 "name": "MobileIntelligence",
                 "printedName": "MobileIntelligence.MobileIntelligence",
-                "usr": "s:18MobileIntelligenceAAC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)MobileIntelligence"
               },
               {
                 "kind": "TypeNominal",
                 "name": "Options",
                 "printedName": "MobileIntelligence.Options",
-                "usr": "s:18MobileIntelligence7OptionsV"
+                "usr": "c:@M@MobileIntelligence@objc(cs)Options"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MobileIntelligenceAAC11withOptionsAbA0D0V_tcfc",
-            "mangledName": "$s18MobileIntelligenceAAC11withOptionsAbA0D0V_tcfc",
+            "usr": "s:18MobileIntelligenceAAC11withOptionsAbA0D0C_tcfc",
+            "mangledName": "$s18MobileIntelligenceAAC11withOptionsAbA0D0C_tcfc",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
+              "Required",
               "Convenience",
               "AccessControl",
               "DiscardableResult",
               "RawDocComment"
             ],
             "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "setupSdk",
+            "printedName": "setupSdk(options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Options",
+                "printedName": "MobileIntelligence.Options",
+                "usr": "c:@M@MobileIntelligence@objc(cs)Options"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MobileIntelligence@objc(cs)MobileIntelligence(cm)setupSdkWithOptions:",
+            "mangledName": "$s18MobileIntelligenceAAC8setupSdk7optionsyAA7OptionsC_tFZ",
+            "moduleName": "MobileIntelligence",
+            "static": true,
+            "objc_name": "setupSdkWithOptions:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -405,12 +435,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligenceAAC9trackPage8pageNameySS_tFZ",
+            "usr": "c:@M@MobileIntelligence@objc(cs)MobileIntelligence(cm)trackPageWithPageName:",
             "mangledName": "$s18MobileIntelligenceAAC9trackPage8pageNameySS_tFZ",
             "moduleName": "MobileIntelligence",
             "static": true,
+            "objc_name": "trackPageWithPageName:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -439,12 +471,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligenceAAC10trackField6forKey4textySS_SStFZ",
+            "usr": "c:@M@MobileIntelligence@objc(cs)MobileIntelligence(cm)trackFieldForKey:text:",
             "mangledName": "$s18MobileIntelligenceAAC10trackField6forKey4textySS_SStFZ",
             "moduleName": "MobileIntelligence",
             "static": true,
+            "objc_name": "trackFieldForKey:text:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -507,18 +541,20 @@
                     "kind": "TypeNominal",
                     "name": "Response",
                     "printedName": "MobileIntelligence.Response",
-                    "usr": "s:18MobileIntelligence8ResponseV"
+                    "usr": "c:@M@MobileIntelligence@objc(cs)Response"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligenceAAC10submitData10completionyyAA8ResponseVc_tFZ",
-            "mangledName": "$s18MobileIntelligenceAAC10submitData10completionyyAA8ResponseVc_tFZ",
+            "usr": "c:@M@MobileIntelligence@objc(cs)MobileIntelligence(cm)submitDataWithCompletion:",
+            "mangledName": "$s18MobileIntelligenceAAC10submitData10completionyyAA8ResponseCc_tFZ",
             "moduleName": "MobileIntelligence",
             "static": true,
+            "objc_name": "submitDataWithCompletion:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -537,7 +573,7 @@
                 "kind": "TypeNominal",
                 "name": "UpdateOptions",
                 "printedName": "MobileIntelligence.UpdateOptions",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV"
+                "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions"
               },
               {
                 "kind": "TypeNominal",
@@ -558,7 +594,7 @@
                         "kind": "TypeNominal",
                         "name": "Response",
                         "printedName": "MobileIntelligence.Response",
-                        "usr": "s:18MobileIntelligence8ResponseV"
+                        "usr": "c:@M@MobileIntelligence@objc(cs)Response"
                       }
                     ]
                   }
@@ -568,12 +604,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligenceAAC13updateOptions7options10completionyAA06UpdateD0V_yAA8ResponseVcSgtFZ",
-            "mangledName": "$s18MobileIntelligenceAAC13updateOptions7options10completionyAA06UpdateD0V_yAA8ResponseVcSgtFZ",
+            "usr": "c:@M@MobileIntelligence@objc(cs)MobileIntelligence(cm)updateOptionsWithOptions:completion:",
+            "mangledName": "$s18MobileIntelligenceAAC13updateOptions7options10completionyAA06UpdateD0C_yAA8ResponseCcSgtFZ",
             "moduleName": "MobileIntelligence",
             "static": true,
+            "objc_name": "updateOptionsWithOptions:completion:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -653,14 +691,72 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:18MobileIntelligenceAAC",
+        "usr": "c:@M@MobileIntelligence@objc(cs)MobileIntelligence",
         "mangledName": "$s18MobileIntelligenceAAC",
         "moduleName": "MobileIntelligence",
+        "objc_name": "MobileIntelligence",
         "declAttributes": [
           "AccessControl",
+          "ObjC",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1335,8 +1431,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence8ResponseV6statusSbSgvp",
-            "mangledName": "$s18MobileIntelligence8ResponseV6statusSbSgvp",
+            "usr": "s:18MobileIntelligence8ResponseC6statusSbSgvp",
+            "mangledName": "$s18MobileIntelligence8ResponseC6statusSbSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -1366,8 +1462,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence8ResponseV6statusSbSgvg",
-                "mangledName": "$s18MobileIntelligence8ResponseV6statusSbSgvg",
+                "usr": "s:18MobileIntelligence8ResponseC6statusSbSgvg",
+                "mangledName": "$s18MobileIntelligence8ResponseC6statusSbSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1398,8 +1494,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence8ResponseV6statusSbSgvs",
-                "mangledName": "$s18MobileIntelligence8ResponseV6statusSbSgvs",
+                "usr": "s:18MobileIntelligence8ResponseC6statusSbSgvs",
+                "mangledName": "$s18MobileIntelligence8ResponseC6statusSbSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1416,8 +1512,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence8ResponseV6statusSbSgvM",
-                "mangledName": "$s18MobileIntelligence8ResponseV6statusSbSgvM",
+                "usr": "s:18MobileIntelligence8ResponseC6statusSbSgvM",
+                "mangledName": "$s18MobileIntelligence8ResponseC6statusSbSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1445,8 +1541,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence8ResponseV7messageSSSgvp",
-            "mangledName": "$s18MobileIntelligence8ResponseV7messageSSSgvp",
+            "usr": "s:18MobileIntelligence8ResponseC7messageSSSgvp",
+            "mangledName": "$s18MobileIntelligence8ResponseC7messageSSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -1476,8 +1572,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence8ResponseV7messageSSSgvg",
-                "mangledName": "$s18MobileIntelligence8ResponseV7messageSSSgvg",
+                "usr": "s:18MobileIntelligence8ResponseC7messageSSSgvg",
+                "mangledName": "$s18MobileIntelligence8ResponseC7messageSSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1508,8 +1604,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence8ResponseV7messageSSSgvs",
-                "mangledName": "$s18MobileIntelligence8ResponseV7messageSSSgvs",
+                "usr": "s:18MobileIntelligence8ResponseC7messageSSSgvs",
+                "mangledName": "$s18MobileIntelligence8ResponseC7messageSSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1526,88 +1622,80 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence8ResponseV7messageSSSgvM",
-                "mangledName": "$s18MobileIntelligence8ResponseV7messageSSSgvM",
+                "usr": "s:18MobileIntelligence8ResponseC7messageSSSgvM",
+                "mangledName": "$s18MobileIntelligence8ResponseC7messageSSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Response",
-                "printedName": "MobileIntelligence.Response",
-                "usr": "s:18MobileIntelligence8ResponseV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:18MobileIntelligence8ResponseV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s18MobileIntelligence8ResponseV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "MobileIntelligence",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MobileIntelligence8ResponseV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s18MobileIntelligence8ResponseV6encode2toys7Encoder_p_tKF",
-            "moduleName": "MobileIntelligence",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:18MobileIntelligence8ResponseV",
-        "mangledName": "$s18MobileIntelligence8ResponseV",
+        "declKind": "Class",
+        "usr": "c:@M@MobileIntelligence@objc(cs)Response",
+        "mangledName": "$s18MobileIntelligence8ResponseC",
         "moduleName": "MobileIntelligence",
+        "objc_name": "Response",
         "declAttributes": [
           "AccessControl",
+          "ObjC",
           "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -7467,8 +7555,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsV8clientIdSSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsV8clientIdSSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsC8clientIdSSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsC8clientIdSSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -7498,8 +7586,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV8clientIdSSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsV8clientIdSSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsC8clientIdSSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsC8clientIdSSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -7530,8 +7618,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV8clientIdSSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsV8clientIdSSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsC8clientIdSSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsC8clientIdSSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -7548,8 +7636,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV8clientIdSSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsV8clientIdSSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsC8clientIdSSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsC8clientIdSSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7577,8 +7665,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsV10sessionKeySSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsV10sessionKeySSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsC10sessionKeySSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsC10sessionKeySSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -7608,8 +7696,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV10sessionKeySSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsV10sessionKeySSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsC10sessionKeySSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsC10sessionKeySSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -7640,8 +7728,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV10sessionKeySSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsV10sessionKeySSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsC10sessionKeySSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsC10sessionKeySSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -7658,8 +7746,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV10sessionKeySSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsV10sessionKeySSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsC10sessionKeySSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsC10sessionKeySSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7687,8 +7775,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsV16parentSessionKeySSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsV16parentSessionKeySSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsC16parentSessionKeySSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsC16parentSessionKeySSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -7718,8 +7806,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV16parentSessionKeySSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsV16parentSessionKeySSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsC16parentSessionKeySSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsC16parentSessionKeySSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -7750,8 +7838,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV16parentSessionKeySSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsV16parentSessionKeySSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsC16parentSessionKeySSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsC16parentSessionKeySSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -7768,8 +7856,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV16parentSessionKeySSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsV16parentSessionKeySSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsC16parentSessionKeySSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsC16parentSessionKeySSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7797,8 +7885,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsV10userIdHashSSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsV10userIdHashSSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsC10userIdHashSSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsC10userIdHashSSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -7828,8 +7916,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV10userIdHashSSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsV10userIdHashSSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsC10userIdHashSSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsC10userIdHashSSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -7860,8 +7948,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV10userIdHashSSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsV10userIdHashSSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsC10userIdHashSSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsC10userIdHashSSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -7878,8 +7966,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV10userIdHashSSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsV10userIdHashSSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsC10userIdHashSSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsC10userIdHashSSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7907,8 +7995,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsV11environmentSSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsV11environmentSSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsC11environmentSSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsC11environmentSSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -7938,8 +8026,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV11environmentSSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsV11environmentSSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsC11environmentSSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsC11environmentSSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -7970,8 +8058,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV11environmentSSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsV11environmentSSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsC11environmentSSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsC11environmentSSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -7988,8 +8076,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV11environmentSSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsV11environmentSSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsC11environmentSSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsC11environmentSSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8017,8 +8105,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsV4flowSSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsV4flowSSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsC4flowSSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsC4flowSSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -8048,8 +8136,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV4flowSSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsV4flowSSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsC4flowSSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsC4flowSSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8080,8 +8168,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV4flowSSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsV4flowSSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsC4flowSSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsC4flowSSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -8098,8 +8186,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV4flowSSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsV4flowSSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsC4flowSSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsC4flowSSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8127,8 +8215,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsV9partnerIdSSSgvp",
-            "mangledName": "$s18MobileIntelligence7OptionsV9partnerIdSSSgvp",
+            "usr": "s:18MobileIntelligence7OptionsC9partnerIdSSSgvp",
+            "mangledName": "$s18MobileIntelligence7OptionsC9partnerIdSSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -8158,8 +8246,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV9partnerIdSSSgvg",
-                "mangledName": "$s18MobileIntelligence7OptionsV9partnerIdSSSgvg",
+                "usr": "s:18MobileIntelligence7OptionsC9partnerIdSSSgvg",
+                "mangledName": "$s18MobileIntelligence7OptionsC9partnerIdSSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8190,8 +8278,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV9partnerIdSSSgvs",
-                "mangledName": "$s18MobileIntelligence7OptionsV9partnerIdSSSgvs",
+                "usr": "s:18MobileIntelligence7OptionsC9partnerIdSSSgvs",
+                "mangledName": "$s18MobileIntelligence7OptionsC9partnerIdSSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -8208,8 +8296,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV9partnerIdSSSgvM",
-                "mangledName": "$s18MobileIntelligence7OptionsV9partnerIdSSSgvM",
+                "usr": "s:18MobileIntelligence7OptionsC9partnerIdSSSgvM",
+                "mangledName": "$s18MobileIntelligence7OptionsC9partnerIdSSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8229,8 +8317,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvp",
-            "mangledName": "$s18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvp",
+            "usr": "s:18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvp",
+            "mangledName": "$s18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -8252,8 +8340,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvg",
-                "mangledName": "$s18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvg",
+                "usr": "s:18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvg",
+                "mangledName": "$s18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8276,8 +8364,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvs",
-                "mangledName": "$s18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvs",
+                "usr": "s:18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvs",
+                "mangledName": "$s18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -8294,8 +8382,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvM",
-                "mangledName": "$s18MobileIntelligence7OptionsV24enableBehaviorBiometricsSbvM",
+                "usr": "s:18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvM",
+                "mangledName": "$s18MobileIntelligence7OptionsC24enableBehaviorBiometricsSbvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8315,8 +8403,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsV23enableClipboardTrackingSbvp",
-            "mangledName": "$s18MobileIntelligence7OptionsV23enableClipboardTrackingSbvp",
+            "usr": "s:18MobileIntelligence7OptionsC23enableClipboardTrackingSbvp",
+            "mangledName": "$s18MobileIntelligence7OptionsC23enableClipboardTrackingSbvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -8338,8 +8426,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV23enableClipboardTrackingSbvg",
-                "mangledName": "$s18MobileIntelligence7OptionsV23enableClipboardTrackingSbvg",
+                "usr": "s:18MobileIntelligence7OptionsC23enableClipboardTrackingSbvg",
+                "mangledName": "$s18MobileIntelligence7OptionsC23enableClipboardTrackingSbvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8362,8 +8450,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV23enableClipboardTrackingSbvs",
-                "mangledName": "$s18MobileIntelligence7OptionsV23enableClipboardTrackingSbvs",
+                "usr": "s:18MobileIntelligence7OptionsC23enableClipboardTrackingSbvs",
+                "mangledName": "$s18MobileIntelligence7OptionsC23enableClipboardTrackingSbvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -8380,8 +8468,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV23enableClipboardTrackingSbvM",
-                "mangledName": "$s18MobileIntelligence7OptionsV23enableClipboardTrackingSbvM",
+                "usr": "s:18MobileIntelligence7OptionsC23enableClipboardTrackingSbvM",
+                "mangledName": "$s18MobileIntelligence7OptionsC23enableClipboardTrackingSbvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8401,8 +8489,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsV19enableFieldTrackingSbvp",
-            "mangledName": "$s18MobileIntelligence7OptionsV19enableFieldTrackingSbvp",
+            "usr": "s:18MobileIntelligence7OptionsC19enableFieldTrackingSbvp",
+            "mangledName": "$s18MobileIntelligence7OptionsC19enableFieldTrackingSbvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
@@ -8424,8 +8512,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV19enableFieldTrackingSbvg",
-                "mangledName": "$s18MobileIntelligence7OptionsV19enableFieldTrackingSbvg",
+                "usr": "s:18MobileIntelligence7OptionsC19enableFieldTrackingSbvg",
+                "mangledName": "$s18MobileIntelligence7OptionsC19enableFieldTrackingSbvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8448,8 +8536,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV19enableFieldTrackingSbvs",
-                "mangledName": "$s18MobileIntelligence7OptionsV19enableFieldTrackingSbvs",
+                "usr": "s:18MobileIntelligence7OptionsC19enableFieldTrackingSbvs",
+                "mangledName": "$s18MobileIntelligence7OptionsC19enableFieldTrackingSbvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -8466,8 +8554,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV19enableFieldTrackingSbvM",
-                "mangledName": "$s18MobileIntelligence7OptionsV19enableFieldTrackingSbvM",
+                "usr": "s:18MobileIntelligence7OptionsC19enableFieldTrackingSbvM",
+                "mangledName": "$s18MobileIntelligence7OptionsC19enableFieldTrackingSbvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8487,12 +8575,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsV11ENV_SANDBOXSSvpZ",
-            "mangledName": "$s18MobileIntelligence7OptionsV11ENV_SANDBOXSSvpZ",
+            "usr": "s:18MobileIntelligence7OptionsC11ENV_SANDBOXSSvpZ",
+            "mangledName": "$s18MobileIntelligence7OptionsC11ENV_SANDBOXSSvpZ",
             "moduleName": "MobileIntelligence",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -8512,11 +8601,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV11ENV_SANDBOXSSvgZ",
-                "mangledName": "$s18MobileIntelligence7OptionsV11ENV_SANDBOXSSvgZ",
+                "usr": "s:18MobileIntelligence7OptionsC11ENV_SANDBOXSSvgZ",
+                "mangledName": "$s18MobileIntelligence7OptionsC11ENV_SANDBOXSSvgZ",
                 "moduleName": "MobileIntelligence",
                 "static": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -8534,12 +8626,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence7OptionsV14ENV_PRODUCTIONSSvpZ",
-            "mangledName": "$s18MobileIntelligence7OptionsV14ENV_PRODUCTIONSSvpZ",
+            "usr": "s:18MobileIntelligence7OptionsC14ENV_PRODUCTIONSSvpZ",
+            "mangledName": "$s18MobileIntelligence7OptionsC14ENV_PRODUCTIONSSvpZ",
             "moduleName": "MobileIntelligence",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
+              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -8559,11 +8652,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence7OptionsV14ENV_PRODUCTIONSSvgZ",
-                "mangledName": "$s18MobileIntelligence7OptionsV14ENV_PRODUCTIONSSvgZ",
+                "usr": "s:18MobileIntelligence7OptionsC14ENV_PRODUCTIONSSvgZ",
+                "mangledName": "$s18MobileIntelligence7OptionsC14ENV_PRODUCTIONSSvgZ",
                 "moduleName": "MobileIntelligence",
                 "static": true,
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -8577,15 +8673,20 @@
                 "kind": "TypeNominal",
                 "name": "Options",
                 "printedName": "MobileIntelligence.Options",
-                "usr": "s:18MobileIntelligence7OptionsV"
+                "usr": "c:@M@MobileIntelligence@objc(cs)Options"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MobileIntelligence7OptionsVACycfc",
-            "mangledName": "$s18MobileIntelligence7OptionsVACycfc",
+            "usr": "c:@M@MobileIntelligence@objc(cs)Options(im)init",
+            "mangledName": "$s18MobileIntelligence7OptionsCACycfc",
             "moduleName": "MobileIntelligence",
+            "overriding": true,
+            "objc_name": "init",
             "declAttributes": [
-              "AccessControl"
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
             ],
             "init_kind": "Designated"
           },
@@ -8598,7 +8699,7 @@
                 "kind": "TypeNominal",
                 "name": "Options",
                 "printedName": "MobileIntelligence.Options",
-                "usr": "s:18MobileIntelligence7OptionsV"
+                "usr": "c:@M@MobileIntelligence@objc(cs)Options"
               },
               {
                 "kind": "TypeNominal",
@@ -8678,23 +8779,82 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MobileIntelligence7OptionsV8clientId10sessionKey013parentSessionG004userE4Hash11environment24enableBehaviorBiometrics4flow07partnerE00M17ClipboardTracking0m5FieldS06region7baseUrlACSS_S4SSbS2SS2bAA6RegionOSStcfc",
-            "mangledName": "$s18MobileIntelligence7OptionsV8clientId10sessionKey013parentSessionG004userE4Hash11environment24enableBehaviorBiometrics4flow07partnerE00M17ClipboardTracking0m5FieldS06region7baseUrlACSS_S4SSbS2SS2bAA6RegionOSStcfc",
+            "usr": "s:18MobileIntelligence7OptionsC8clientId10sessionKey013parentSessionG004userE4Hash11environment24enableBehaviorBiometrics4flow07partnerE00M17ClipboardTracking0m5FieldS06region7baseUrlACSS_S4SSbS2SS2bAA6RegionOSStcfc",
+            "mangledName": "$s18MobileIntelligence7OptionsC8clientId10sessionKey013parentSessionG004userE4Hash11environment24enableBehaviorBiometrics4flow07partnerE00M17ClipboardTracking0m5FieldS06region7baseUrlACSS_S4SSbS2SS2bAA6RegionOSStcfc",
             "moduleName": "MobileIntelligence",
             "deprecated": true,
             "declAttributes": [
+              "Convenience",
               "AccessControl",
               "Available"
             ],
-            "init_kind": "Designated"
+            "init_kind": "Convenience"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:18MobileIntelligence7OptionsV",
-        "mangledName": "$s18MobileIntelligence7OptionsV",
+        "declKind": "Class",
+        "usr": "c:@M@MobileIntelligence@objc(cs)Options",
+        "mangledName": "$s18MobileIntelligence7OptionsC",
         "moduleName": "MobileIntelligence",
+        "objc_name": "Options",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -8723,13 +8883,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence13UpdateOptionsV10userIdHashSSSgvp",
-            "mangledName": "$s18MobileIntelligence13UpdateOptionsV10userIdHashSSSgvp",
+            "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(py)userIdHash",
+            "mangledName": "$s18MobileIntelligence13UpdateOptionsC10userIdHashSSSgvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -8754,10 +8915,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV10userIdHashSSSgvg",
-                "mangledName": "$s18MobileIntelligence13UpdateOptionsV10userIdHashSSSgvg",
+                "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(im)userIdHash",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC10userIdHashSSSgvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -8786,10 +8950,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV10userIdHashSSSgvs",
-                "mangledName": "$s18MobileIntelligence13UpdateOptionsV10userIdHashSSSgvs",
+                "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(im)setUserIdHash:",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC10userIdHashSSSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -8804,8 +8971,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV10userIdHashSSSgvM",
-                "mangledName": "$s18MobileIntelligence13UpdateOptionsV10userIdHashSSSgvM",
+                "usr": "s:18MobileIntelligence13UpdateOptionsC10userIdHashSSSgvM",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC10userIdHashSSSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8825,13 +8992,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence13UpdateOptionsV10sessionKeySSvp",
-            "mangledName": "$s18MobileIntelligence13UpdateOptionsV10sessionKeySSvp",
+            "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(py)sessionKey",
+            "mangledName": "$s18MobileIntelligence13UpdateOptionsC10sessionKeySSvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -8848,10 +9016,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV10sessionKeySSvg",
-                "mangledName": "$s18MobileIntelligence13UpdateOptionsV10sessionKeySSvg",
+                "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(im)sessionKey",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC10sessionKeySSvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -8872,10 +9043,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV10sessionKeySSvs",
-                "mangledName": "$s18MobileIntelligence13UpdateOptionsV10sessionKeySSvs",
+                "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(im)setSessionKey:",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC10sessionKeySSvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -8890,8 +9064,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV10sessionKeySSvM",
-                "mangledName": "$s18MobileIntelligence13UpdateOptionsV10sessionKeySSvM",
+                "usr": "s:18MobileIntelligence13UpdateOptionsC10sessionKeySSvM",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC10sessionKeySSvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8911,13 +9085,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence13UpdateOptionsV16parentSessionKeySSvp",
-            "mangledName": "$s18MobileIntelligence13UpdateOptionsV16parentSessionKeySSvp",
+            "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(py)parentSessionKey",
+            "mangledName": "$s18MobileIntelligence13UpdateOptionsC16parentSessionKeySSvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -8934,10 +9109,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV16parentSessionKeySSvg",
-                "mangledName": "$s18MobileIntelligence13UpdateOptionsV16parentSessionKeySSvg",
+                "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(im)parentSessionKey",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC16parentSessionKeySSvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -8958,10 +9136,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV16parentSessionKeySSvs",
-                "mangledName": "$s18MobileIntelligence13UpdateOptionsV16parentSessionKeySSvs",
+                "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(im)setParentSessionKey:",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC16parentSessionKeySSvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -8976,8 +9157,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV16parentSessionKeySSvM",
-                "mangledName": "$s18MobileIntelligence13UpdateOptionsV16parentSessionKeySSvM",
+                "usr": "s:18MobileIntelligence13UpdateOptionsC16parentSessionKeySSvM",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC16parentSessionKeySSvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8997,13 +9178,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MobileIntelligence13UpdateOptionsV4flowSSvp",
-            "mangledName": "$s18MobileIntelligence13UpdateOptionsV4flowSSvp",
+            "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(py)flow",
+            "mangledName": "$s18MobileIntelligence13UpdateOptionsC4flowSSvp",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -9020,10 +9202,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV4flowSSvg",
-                "mangledName": "$s18MobileIntelligence13UpdateOptionsV4flowSSvg",
+                "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(im)flow",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC4flowSSvg",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -9044,8 +9229,121 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV4flowSSvs",
-                "mangledName": "$s18MobileIntelligence13UpdateOptionsV4flowSSvs",
+                "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(im)setFlow:",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC4flowSSvs",
+                "moduleName": "MobileIntelligence",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MobileIntelligence13UpdateOptionsC4flowSSvM",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC4flowSSvM",
+                "moduleName": "MobileIntelligence",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enableBehaviorBiometrics",
+            "printedName": "enableBehaviorBiometrics",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MobileIntelligence13UpdateOptionsC24enableBehaviorBiometricsSbSgvp",
+            "mangledName": "$s18MobileIntelligence13UpdateOptionsC24enableBehaviorBiometricsSbSgvp",
+            "moduleName": "MobileIntelligence",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MobileIntelligence13UpdateOptionsC24enableBehaviorBiometricsSbSgvg",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC24enableBehaviorBiometricsSbSgvg",
+                "moduleName": "MobileIntelligence",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MobileIntelligence13UpdateOptionsC24enableBehaviorBiometricsSbSgvs",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC24enableBehaviorBiometricsSbSgvs",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "set"
@@ -9062,8 +9360,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV4flowSSvM",
-                "mangledName": "$s18MobileIntelligence13UpdateOptionsV4flowSSvM",
+                "usr": "s:18MobileIntelligence13UpdateOptionsC24enableBehaviorBiometricsSbSgvM",
+                "mangledName": "$s18MobileIntelligence13UpdateOptionsC24enableBehaviorBiometricsSbSgvM",
                 "moduleName": "MobileIntelligence",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -9079,28 +9377,33 @@
                 "kind": "TypeNominal",
                 "name": "UpdateOptions",
                 "printedName": "MobileIntelligence.UpdateOptions",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV"
+                "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MobileIntelligence13UpdateOptionsVACycfc",
-            "mangledName": "$s18MobileIntelligence13UpdateOptionsVACycfc",
+            "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions(im)init",
+            "mangledName": "$s18MobileIntelligence13UpdateOptionsCACycfc",
             "moduleName": "MobileIntelligence",
+            "overriding": true,
+            "objc_name": "init",
             "declAttributes": [
-              "AccessControl"
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
             ],
             "init_kind": "Designated"
           },
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sessionKey:parentSessionKey:userIdHash:flow:)",
+            "printedName": "init(sessionKey:parentSessionKey:userIdHash:flow:enableBehaviorBiometrics:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "UpdateOptions",
                 "printedName": "MobileIntelligence.UpdateOptions",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV"
+                "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions"
               },
               {
                 "kind": "TypeNominal",
@@ -9136,91 +9439,98 @@
                 "printedName": "Swift.String",
                 "hasDefaultArg": true,
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MobileIntelligence13UpdateOptionsV10sessionKey013parentSessionF010userIdHash4flowACSS_S2SSgSStcfc",
-            "mangledName": "$s18MobileIntelligence13UpdateOptionsV10sessionKey013parentSessionF010userIdHash4flowACSS_S2SSgSStcfc",
+            "usr": "s:18MobileIntelligence13UpdateOptionsC10sessionKey013parentSessionF010userIdHash4flow24enableBehaviorBiometricsACSS_S2SSgSSSbSgtcfc",
+            "mangledName": "$s18MobileIntelligence13UpdateOptionsC10sessionKey013parentSessionF010userIdHash4flow24enableBehaviorBiometricsACSS_S2SSgSSSbSgtcfc",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
+              "Convenience",
               "AccessControl",
               "RawDocComment"
             ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UpdateOptions",
-                "printedName": "MobileIntelligence.UpdateOptions",
-                "usr": "s:18MobileIntelligence13UpdateOptionsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:18MobileIntelligence13UpdateOptionsV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s18MobileIntelligence13UpdateOptionsV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "MobileIntelligence",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MobileIntelligence13UpdateOptionsV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s18MobileIntelligence13UpdateOptionsV6encode2toys7Encoder_p_tKF",
-            "moduleName": "MobileIntelligence",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
+            "init_kind": "Convenience"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:18MobileIntelligence13UpdateOptionsV",
-        "mangledName": "$s18MobileIntelligence13UpdateOptionsV",
+        "declKind": "Class",
+        "usr": "c:@M@MobileIntelligence@objc(cs)UpdateOptions",
+        "mangledName": "$s18MobileIntelligence13UpdateOptionsC",
         "moduleName": "MobileIntelligence",
+        "objc_name": "UpdateOptions",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -9238,15 +9548,20 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MobileIntelligence14OptionsBuilderCACycfc",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)init",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderCACycfc",
             "moduleName": "MobileIntelligence",
+            "overriding": true,
+            "objc_name": "init",
             "declAttributes": [
-              "AccessControl"
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
             ],
             "init_kind": "Designated"
           },
@@ -9259,7 +9574,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9269,11 +9584,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC11setClientId4withACSS_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)setClientIdWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC11setClientId4withACSS_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "setClientIdWith:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9286,7 +9603,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9296,11 +9613,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC13setSessionKey4withACSS_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)setSessionKeyWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC13setSessionKey4withACSS_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "setSessionKeyWith:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9313,7 +9632,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9323,11 +9642,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC13setUserIdHash4withACSS_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)setUserIdHashWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC13setUserIdHash4withACSS_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "setUserIdHashWith:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9340,7 +9661,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9350,11 +9671,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC14setEnvironment4withACSS_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)setEnvironmentWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC14setEnvironment4withACSS_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "setEnvironmentWith:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9367,7 +9690,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9377,11 +9700,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC7setFlow4withACSS_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)setFlowWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC7setFlow4withACSS_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "setFlowWith:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9394,7 +9719,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9404,11 +9729,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC12setPartnerId4withACSS_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)setPartnerIdWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC12setPartnerId4withACSS_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "setPartnerIdWith:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9421,7 +9748,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9431,11 +9758,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC24enableBehaviorBiometrics4withACSb_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)enableBehaviorBiometricsWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC24enableBehaviorBiometrics4withACSb_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "enableBehaviorBiometricsWith:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9448,7 +9777,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9458,11 +9787,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC23enableClipboardTracking4withACSb_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)enableClipboardTrackingWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC23enableClipboardTracking4withACSb_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "enableClipboardTrackingWith:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9475,7 +9806,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9485,11 +9816,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC19enableFieldTracking4withACSb_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)enableFieldTrackingWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC19enableFieldTracking4withACSb_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "enableFieldTrackingWith:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9502,7 +9835,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9512,11 +9845,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC25setShouldAutoSubmitOnInit4withACSb_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)setShouldAutoSubmitOnInitWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC25setShouldAutoSubmitOnInit4withACSb_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "setShouldAutoSubmitOnInitWith:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -9530,7 +9865,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9540,11 +9875,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC17setSourcePlatform4withACSS_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)setSourcePlatformWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC17setSourcePlatform4withACSS_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "setSourcePlatformWith:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9557,7 +9894,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9567,11 +9904,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC19setParentSessionKey4withACSS_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)setParentSessionKeyWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC19setParentSessionKey4withACSS_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "setParentSessionKeyWith:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9584,7 +9923,7 @@
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9604,14 +9943,14 @@
           },
           {
             "kind": "Function",
-            "name": "setBaseUrl",
-            "printedName": "setBaseUrl(with:)",
+            "name": "setRegion",
+            "printedName": "setRegion(with:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "OptionsBuilder",
                 "printedName": "MobileIntelligence.OptionsBuilder",
-                "usr": "s:18MobileIntelligence14OptionsBuilderC"
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
               },
               {
                 "kind": "TypeNominal",
@@ -9621,11 +9960,42 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC10setBaseUrl4withACSS_tF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)setRegionWith:",
+            "mangledName": "$s18MobileIntelligence14OptionsBuilderC9setRegion4withACSS_tF",
+            "moduleName": "MobileIntelligence",
+            "objc_name": "setRegionWith:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBaseUrl",
+            "printedName": "setBaseUrl(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptionsBuilder",
+                "printedName": "MobileIntelligence.OptionsBuilder",
+                "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)setBaseUrlWith:",
             "mangledName": "$s18MobileIntelligence14OptionsBuilderC10setBaseUrl4withACSS_tF",
             "moduleName": "MobileIntelligence",
+            "objc_name": "setBaseUrlWith:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -9638,25 +10008,84 @@
                 "kind": "TypeNominal",
                 "name": "Options",
                 "printedName": "MobileIntelligence.Options",
-                "usr": "s:18MobileIntelligence7OptionsV"
+                "usr": "c:@M@MobileIntelligence@objc(cs)Options"
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MobileIntelligence14OptionsBuilderC5buildAA0C0VyF",
-            "mangledName": "$s18MobileIntelligence14OptionsBuilderC5buildAA0C0VyF",
+            "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder(im)build",
+            "mangledName": "$s18MobileIntelligence14OptionsBuilderC5buildAA0C0CyF",
             "moduleName": "MobileIntelligence",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "s:18MobileIntelligence14OptionsBuilderC",
+        "usr": "c:@M@MobileIntelligence@objc(cs)OptionBuilder",
         "mangledName": "$s18MobileIntelligence14OptionsBuilderC",
         "moduleName": "MobileIntelligence",
+        "objc_name": "OptionBuilder",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -10462,7 +10891,7 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Networking\/Networking.swift",
       "kind": "IntegerLiteral",
-      "offset": 8352,
+      "offset": 8598,
       "length": 1,
       "value": "1"
     },
@@ -10583,7 +11012,7 @@
       "kind": "StringLiteral",
       "offset": 2633,
       "length": 8,
-      "value": "\"1.0.27\""
+      "value": "\"1.0.29\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/GlobalVariables.swift",
@@ -13052,154 +13481,154 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 171,
+      "offset": 172,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 188,
+      "offset": 189,
       "length": 4,
       "value": "\"eu\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 171,
+      "offset": 172,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 188,
+      "offset": 189,
       "length": 4,
       "value": "\"eu\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "BooleanLiteral",
-      "offset": 511,
+      "offset": 538,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "BooleanLiteral",
-      "offset": 563,
+      "offset": 590,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "BooleanLiteral",
-      "offset": 612,
+      "offset": 639,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "BooleanLiteral",
-      "offset": 665,
+      "offset": 692,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 704,
+      "offset": 731,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 790,
+      "offset": 817,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 893,
+      "offset": 924,
       "length": 13,
       "value": "\"development\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 943,
+      "offset": 974,
       "length": 9,
       "value": "\"sandbox\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 992,
+      "offset": 1023,
       "length": 12,
       "value": "\"production\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "BooleanLiteral",
-      "offset": 1336,
+      "offset": 1400,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "BooleanLiteral",
-      "offset": 1387,
+      "offset": 1451,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 1445,
+      "offset": 1509,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 2089,
+      "offset": 2198,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 2134,
+      "offset": 2258,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 2167,
+      "offset": 2306,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 2264,
+      "offset": 2490,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 2295,
+      "offset": 2521,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/Options.swift",
       "kind": "StringLiteral",
-      "offset": 2335,
+      "offset": 2561,
       "length": 2,
       "value": "\"\""
     }

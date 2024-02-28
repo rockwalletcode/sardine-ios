@@ -231,6 +231,7 @@ using UInt = size_t;
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -252,6 +253,94 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class Options;
+@class NSString;
+@class Response;
+@class UpdateOptions;
+
+/// Sardine’s Device Intelligence product provides a tamper-proof and reliable fingerprint for a visitor to your website or mobile app. Anyone accepting payments online (e-commerce merchants, fintechs, banks) can use Sardine’s Device Intelligence to detect payment fraud and referral abuse. Moreover, they can reduce customer friction at the time of customer onboarding or payments by requiring 2FA only on untrusted devices.
+SWIFT_CLASS_NAMED("MobileIntelligence")
+@interface MobileIntelligence : NSObject
+/// Method to initialize MobileIntelligence with device & event tracking
+/// SAMPLE CODE SNIPPET:
+/// \code
+///  MobileIntelligence.init()
+///
+/// \endcode
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (void)setupSdkWithOptions:(Options * _Nonnull)options;
+/// TRACKPAGE method will handles some behavior biometrics
+/// \param pageName key to set the pageName need to be tracked
+///
++ (void)trackPageWithPageName:(NSString * _Nonnull)pageName;
+/// FOR PROJECT USING SWIFTUI FOR DESIGN
+/// <ul>
+///   <li>
+///     Method to start tracking of TextField with MobileIntelligence SDK
+///   </li>
+/// </ul>
+/// \param forKey key associated with TextField
+///
+/// \param text text entered into TextField
+///
+/// \param fieldType type of TextField
+///
++ (void)trackFieldForKey:(NSString * _Nonnull)key text:(NSString * _Nonnull)text;
+/// Method to log tracked data to MobileIntelligence SDK
+/// SAMPLE CODE SNIPPET:
+/// \code
+/// MobileIntelligence.submitData { (response) in
+///   guard let res = response else {
+///     print(error?.localizedDescription ?? "NO ERROR")
+///     return
+///   }
+///     print(res)
+/// }
+///
+/// \endcode
++ (void)submitDataWithCompletion:(void (^ _Nonnull)(Response * _Nonnull))completion;
+/// Method to update configuration options of SDK
+/// \param options Fields to update (can be userIdHash, flow and/or sessionKey)
+///
++ (void)updateOptionsWithOptions:(UpdateOptions * _Nonnull)options completion:(void (^ _Nullable)(Response * _Nonnull))completion;
+@end
+
+
+SWIFT_CLASS_NAMED("Options")
+@interface Options : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS_NAMED("OptionsBuilder")
+@interface OptionBuilder : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (OptionBuilder * _Nonnull)setClientIdWith:(NSString * _Nonnull)clientId SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setSessionKeyWith:(NSString * _Nonnull)sessionKey SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setUserIdHashWith:(NSString * _Nonnull)userIdHash SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setEnvironmentWith:(NSString * _Nonnull)environment SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setFlowWith:(NSString * _Nonnull)flow SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setPartnerIdWith:(NSString * _Nonnull)partnerId SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)enableBehaviorBiometricsWith:(BOOL)enableBehaviorBiometrics SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)enableClipboardTrackingWith:(BOOL)enableClipboardTracking SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)enableFieldTrackingWith:(BOOL)enableFieldTracking SWIFT_WARN_UNUSED_RESULT;
+/// Default SDK behavior should be auto-submit. Please refer to Sardine before using this option
+- (OptionBuilder * _Nonnull)setShouldAutoSubmitOnInitWith:(BOOL)shouldAutoSubmitOnInit SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setSourcePlatformWith:(NSString * _Nonnull)sourcePlatform SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setParentSessionKeyWith:(NSString * _Nonnull)parentSessionKey SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setRegionWith:(NSString * _Nonnull)region SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setBaseUrlWith:(NSString * _Nonnull)baseUrl SWIFT_WARN_UNUSED_RESULT;
+- (Options * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS_NAMED("Response")
+@interface Response : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 
 
@@ -265,6 +354,16 @@ using UInt = size_t;
 - (void)touchesCancelled:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 @end
 
+
+
+SWIFT_CLASS_NAMED("UpdateOptions")
+@interface UpdateOptions : NSObject
+@property (nonatomic, copy) NSString * _Nullable userIdHash;
+@property (nonatomic, copy) NSString * _Nonnull sessionKey;
+@property (nonatomic, copy) NSString * _Nonnull parentSessionKey;
+@property (nonatomic, copy) NSString * _Nonnull flow;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 #endif
 #if defined(__cplusplus)
@@ -507,6 +606,7 @@ using UInt = size_t;
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -528,6 +628,94 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+@class Options;
+@class NSString;
+@class Response;
+@class UpdateOptions;
+
+/// Sardine’s Device Intelligence product provides a tamper-proof and reliable fingerprint for a visitor to your website or mobile app. Anyone accepting payments online (e-commerce merchants, fintechs, banks) can use Sardine’s Device Intelligence to detect payment fraud and referral abuse. Moreover, they can reduce customer friction at the time of customer onboarding or payments by requiring 2FA only on untrusted devices.
+SWIFT_CLASS_NAMED("MobileIntelligence")
+@interface MobileIntelligence : NSObject
+/// Method to initialize MobileIntelligence with device & event tracking
+/// SAMPLE CODE SNIPPET:
+/// \code
+///  MobileIntelligence.init()
+///
+/// \endcode
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (void)setupSdkWithOptions:(Options * _Nonnull)options;
+/// TRACKPAGE method will handles some behavior biometrics
+/// \param pageName key to set the pageName need to be tracked
+///
++ (void)trackPageWithPageName:(NSString * _Nonnull)pageName;
+/// FOR PROJECT USING SWIFTUI FOR DESIGN
+/// <ul>
+///   <li>
+///     Method to start tracking of TextField with MobileIntelligence SDK
+///   </li>
+/// </ul>
+/// \param forKey key associated with TextField
+///
+/// \param text text entered into TextField
+///
+/// \param fieldType type of TextField
+///
++ (void)trackFieldForKey:(NSString * _Nonnull)key text:(NSString * _Nonnull)text;
+/// Method to log tracked data to MobileIntelligence SDK
+/// SAMPLE CODE SNIPPET:
+/// \code
+/// MobileIntelligence.submitData { (response) in
+///   guard let res = response else {
+///     print(error?.localizedDescription ?? "NO ERROR")
+///     return
+///   }
+///     print(res)
+/// }
+///
+/// \endcode
++ (void)submitDataWithCompletion:(void (^ _Nonnull)(Response * _Nonnull))completion;
+/// Method to update configuration options of SDK
+/// \param options Fields to update (can be userIdHash, flow and/or sessionKey)
+///
++ (void)updateOptionsWithOptions:(UpdateOptions * _Nonnull)options completion:(void (^ _Nullable)(Response * _Nonnull))completion;
+@end
+
+
+SWIFT_CLASS_NAMED("Options")
+@interface Options : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS_NAMED("OptionsBuilder")
+@interface OptionBuilder : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (OptionBuilder * _Nonnull)setClientIdWith:(NSString * _Nonnull)clientId SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setSessionKeyWith:(NSString * _Nonnull)sessionKey SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setUserIdHashWith:(NSString * _Nonnull)userIdHash SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setEnvironmentWith:(NSString * _Nonnull)environment SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setFlowWith:(NSString * _Nonnull)flow SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setPartnerIdWith:(NSString * _Nonnull)partnerId SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)enableBehaviorBiometricsWith:(BOOL)enableBehaviorBiometrics SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)enableClipboardTrackingWith:(BOOL)enableClipboardTracking SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)enableFieldTrackingWith:(BOOL)enableFieldTracking SWIFT_WARN_UNUSED_RESULT;
+/// Default SDK behavior should be auto-submit. Please refer to Sardine before using this option
+- (OptionBuilder * _Nonnull)setShouldAutoSubmitOnInitWith:(BOOL)shouldAutoSubmitOnInit SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setSourcePlatformWith:(NSString * _Nonnull)sourcePlatform SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setParentSessionKeyWith:(NSString * _Nonnull)parentSessionKey SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setRegionWith:(NSString * _Nonnull)region SWIFT_WARN_UNUSED_RESULT;
+- (OptionBuilder * _Nonnull)setBaseUrlWith:(NSString * _Nonnull)baseUrl SWIFT_WARN_UNUSED_RESULT;
+- (Options * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS_NAMED("Response")
+@interface Response : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 
 
@@ -541,6 +729,16 @@ using UInt = size_t;
 - (void)touchesCancelled:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 @end
 
+
+
+SWIFT_CLASS_NAMED("UpdateOptions")
+@interface UpdateOptions : NSObject
+@property (nonatomic, copy) NSString * _Nullable userIdHash;
+@property (nonatomic, copy) NSString * _Nonnull sessionKey;
+@property (nonatomic, copy) NSString * _Nonnull parentSessionKey;
+@property (nonatomic, copy) NSString * _Nonnull flow;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 #endif
 #if defined(__cplusplus)
