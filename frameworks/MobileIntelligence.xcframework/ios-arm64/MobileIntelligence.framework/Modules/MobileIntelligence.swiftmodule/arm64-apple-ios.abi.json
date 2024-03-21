@@ -11012,7 +11012,7 @@
       "kind": "StringLiteral",
       "offset": 2633,
       "length": 8,
-      "value": "\"1.0.29\""
+      "value": "\"1.0.30\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/Source\/MobileIntelligence\/MobileIntelligence\/GlobalVariables.swift",

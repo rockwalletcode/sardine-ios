@@ -26,11 +26,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uy6h3ntgJfXs7JtaPHhT3CvaGJU=
+		0GZWcefLyJ9GnzzhFeplZDRkHMc=
 		</data>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		mIzALwJIOGbM2fink1V7x3vaEB8=
+		4GPQXoNWXg6Lox9mWAAX/6mqHsc=
 		</data>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GEdCLY+PNwugP95hefOB19rxwvs=
+		nSgiblPc2fL7J5huuyXFwA7vbMs=
 		</data>
 		<key>Modules/MobileIntelligence.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		mIzALwJIOGbM2fink1V7x3vaEB8=
+		4GPQXoNWXg6Lox9mWAAX/6mqHsc=
 		</data>
 		<key>Modules/MobileIntelligence.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -66,11 +66,15 @@
 		</data>
 		<key>Modules/MobileIntelligence.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6Dv9mdEtjspS2kC8qkUXAhvHYhA=
+		YUBWUeUuVH3HbLYlo0nvsP3H+Ds=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		HS+gPY43GZd0RQrtkmyjOK5ZAMI=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		LTVO8JTjfIbXgRQBF4j+NEAXRU4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -114,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nydrUTW4xEzgFB+vGXhoh0bq6a9fcJiRZCUVo2UvXtc=
+			DPGzl6G824cKrE7QhheggQ331LXKJ9vRX1VL8P/2mfM=
 			</data>
 		</dict>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -142,14 +146,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m5KGD4Go+IXuSBNlFiCv3tu5sOkCO8AvH2IoWhgEcgQ=
+			sXNXUwWoVe9RZcy2N+8Sg86DTgN8apPwEsGlhyz1yvc=
 			</data>
 		</dict>
 		<key>Modules/MobileIntelligence.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nydrUTW4xEzgFB+vGXhoh0bq6a9fcJiRZCUVo2UvXtc=
+			DPGzl6G824cKrE7QhheggQ331LXKJ9vRX1VL8P/2mfM=
 			</data>
 		</dict>
 		<key>Modules/MobileIntelligence.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -177,7 +181,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bPbmdxouqElGFWzHuiyGERWIZRW3EGxqOH3H2hkm0Mw=
+			MA7xKBxg3ilXVIXfYqK2zvwab20vMY0a74dIQ5ZHeSw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -185,6 +189,13 @@
 			<key>hash2</key>
 			<data>
 			769QMrKk/mBz5ap+GgdRkACtryZw4E+ixIJgeOxffOk=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Kheo22TOj35tOeEDguRMaH3Sa26nfuwaM9AbHg+hSis=
 			</data>
 		</dict>
 	</dict>
