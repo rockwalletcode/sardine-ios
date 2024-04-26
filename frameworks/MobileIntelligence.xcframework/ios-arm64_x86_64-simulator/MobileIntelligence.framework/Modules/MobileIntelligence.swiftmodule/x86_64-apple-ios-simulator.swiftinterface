@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MobileIntelligence
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdSupport
@@ -26,6 +26,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public enum TextFieldType : Swift.String {
   case userid
   case email
@@ -75,12 +76,12 @@ public enum ErrorType : Swift.Error, Foundation.LocalizedError {
   }
 }
 public struct EventsResponse : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct CorIdResponse : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Response) public class Response : ObjectiveC.NSObject {
   public var status: Swift.Bool?
@@ -92,15 +93,15 @@ public struct DevicesResponse : Swift.Codable {
   public var level: Swift.String?
   public var attributes: [Swift.String : [Swift.String]]?
   public var signals: [SignalsModel]?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct SignalsModel : Swift.Codable {
   public var key: Swift.String?
   public var value: Swift.String?
   public var confidence: Swift.Int?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct Crc32 : Swift.CustomStringConvertible {
   public init()
@@ -137,8 +138,8 @@ extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) public func ipAddress() -> (ipv4: Swift.String?, ipv6: Swift.String?)?
 }
 public struct KycStatusResponse : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum Region : Swift.String {
   case DEFAULT
@@ -173,8 +174,9 @@ public enum Region : Swift.String {
   @objc public var parentSessionKey: Swift.String
   @objc public var flow: Swift.String
   public var enableBehaviorBiometrics: Swift.Bool?
+  public var enableClipboardTracking: Swift.Bool?
   @objc override dynamic public init()
-  convenience public init(sessionKey: Swift.String = "", parentSessionKey: Swift.String = "", userIdHash: Swift.String?, flow: Swift.String = "", enableBehaviorBiometrics: Swift.Bool? = nil)
+  convenience public init(sessionKey: Swift.String = "", parentSessionKey: Swift.String = "", userIdHash: Swift.String?, flow: Swift.String = "", enableBehaviorBiometrics: Swift.Bool? = nil, enableClipboardTracking: Swift.Bool? = nil)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(OptionBuilder) public class OptionsBuilder : ObjectiveC.NSObject {

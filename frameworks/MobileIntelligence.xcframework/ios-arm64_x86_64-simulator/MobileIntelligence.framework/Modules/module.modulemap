@@ -1,7 +1,7 @@
 framework module MobileIntelligence {
   umbrella header "MobileIntelligence.h"
-
   export *
+
   module * { export * }
 }
 
