@@ -843,6 +843,4 @@ SWIFT_CLASS_NAMED("UpdateOptions")
 #pragma clang diagnostic pop
 #endif
 
-#else
-#error unsupported Swift architecture
 #endif

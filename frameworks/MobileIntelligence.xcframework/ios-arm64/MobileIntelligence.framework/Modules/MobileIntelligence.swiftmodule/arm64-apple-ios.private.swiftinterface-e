@@ -17,6 +17,7 @@ import DeviceCheck
 import Foundation
 import MessageUI
 @_exported import MobileIntelligence
+import Network
 import ReplayKit
 import SafariServices
 import Security
