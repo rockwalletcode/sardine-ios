@@ -6,39 +6,35 @@
 	<dict>
 		<key>Headers/MobileIntelligence-Swift.h</key>
 		<data>
-		aoyXy+ILpW5TEN7P8wvF4DPUJKI=
+		yZaxaKwMlbgvzZLg2+Azo7HCUo4=
 		</data>
 		<key>Headers/MobileIntelligence.h</key>
 		<data>
 		4i5+w3QtTkk3BAk1UKxhUjnVqHY=
 		</data>
-		<key>Headers/sslfuncs.h</key>
-		<data>
-		1xIgphVKgIgVEWXTtLavvlwNjJY=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		CROVyG6/bRiwp15Q63/sLMepKRU=
+		GmqkG0enuHEyvmPP+p5QcuSpgh0=
 		</data>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		eZu1kWFpaR2v8E3GsfPkEdDMKXs=
+		KLBanygjEQcX447eRPvJaUkUmjc=
 		</data>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		b1JqEv7zHlzY7Bvg8Ks5Ilwp44U=
+		bVodbEtCZVDjYoL2BhhUz2WbDGE=
 		</data>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		xHaQjbfDkWcAILJOMGSxMB0wGWA=
+		SPREMm6pLn4VIdCTfR/zCHPNY50=
 		</data>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		b1JqEv7zHlzY7Bvg8Ks5Ilwp44U=
+		bVodbEtCZVDjYoL2BhhUz2WbDGE=
 		</data>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ZK8TjkBjL124i6koa1PpLsne77M=
+		l/cYhROOYxq8ADOcC1ArPMn1WS4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u8jRD106/PzSNkIgQUioVOKpMCPFLSvc20q+t8ljDrc=
+			GLfYqmEd7kvH25R/7oW9xAVDsWXs750uTstlsZItAa0=
 			</data>
 		</dict>
 		<key>Headers/MobileIntelligence.h</key>
@@ -65,46 +61,39 @@
 			SFRpkB1L7zAG/5reVdbK9JjCfiR4c/ZbcaYa1W8s3bk=
 			</data>
 		</dict>
-		<key>Headers/sslfuncs.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SITWAe1cnxqg31PbY/AF6eJSOHUk5DqwWDHDEsYYJ50=
-			</data>
-		</dict>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			esQMD+7f1B1+bZKqumFTgcP+5sN8JXsBvh/H9NzqKDY=
+			SY+UpiiO/gzYKpVzlYsniGEwJ4lpNtut3360WM5SqUQ=
 			</data>
 		</dict>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JxtMxd5l74KMIt9+kC9rdgXyGCtUCD7vGm5WfS6INuY=
+			tVNo4PFo5sYxW2BHTF4uNB2XYGHAP8qr/UN0B7cfAus=
 			</data>
 		</dict>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eLh+nBz7NgejT/PrMvl11Gym1QbH+VVL9wuN6u4haO4=
+			knyJdgsz4AVtJTPZvR7MKNV8Ylqa1x2bQMI9tAdWHlA=
 			</data>
 		</dict>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JxtMxd5l74KMIt9+kC9rdgXyGCtUCD7vGm5WfS6INuY=
+			tVNo4PFo5sYxW2BHTF4uNB2XYGHAP8qr/UN0B7cfAus=
 			</data>
 		</dict>
 		<key>Modules/MobileIntelligence.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xb0vdietrSGre8Pgw/2K/xuUoKBLbE2XkHyOaQSmIZg=
+			2qaPWuicSUM3v2EcVNyFptq5jMJBBn2Pi065KQib4HI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

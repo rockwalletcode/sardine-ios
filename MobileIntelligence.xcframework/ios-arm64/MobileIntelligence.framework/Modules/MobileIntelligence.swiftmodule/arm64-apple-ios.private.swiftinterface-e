@@ -61,17 +61,12 @@ extension UIKit.UIView {
 public enum ErrorType : Swift.Error, Foundation.LocalizedError {
   case noInternetConnection
   case parseResponseFail
-  case parseUrlFail
   case notFound
   case validationError
   case serverError
   case defaultError
+  case systemError(message: Swift.String)
   public var errorDescription: Swift.String? {
-    get
-  }
-  public static func == (a: MobileIntelligence.ErrorType, b: MobileIntelligence.ErrorType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
     get
   }
 }
@@ -79,29 +74,10 @@ public struct EventsResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct CorIdResponse : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Response) public class Response : ObjectiveC.NSObject {
   public var status: Swift.Bool?
   public var message: Swift.String?
   @objc deinit
-}
-public struct DevicesResponse : Swift.Codable {
-  public var id: Swift.String?
-  public var level: Swift.String?
-  public var attributes: [Swift.String : [Swift.String]]?
-  public var signals: [MobileIntelligence.SignalsModel]?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct SignalsModel : Swift.Codable {
-  public var key: Swift.String?
-  public var value: Swift.String?
-  public var confidence: Swift.Int?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct Crc32 : Swift.CustomStringConvertible {
   public init()
@@ -127,10 +103,6 @@ public enum Model : Swift.String {
     get
   }
 }
-public struct KycStatusResponse : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public enum Region : Swift.String {
   case DEFAULT
   case EU
@@ -145,17 +117,18 @@ public enum Region : Swift.String {
   public var sessionKey: Swift.String?
   public var parentSessionKey: Swift.String?
   public var userIdHash: Swift.String?
-  public var environment: Swift.String?
+  public var environment: Swift.String
   public var flow: Swift.String?
   public var partnerId: Swift.String?
   public var enableBehaviorBiometrics: Swift.Bool
   public var enableClipboardTracking: Swift.Bool
   public var enableFieldTracking: Swift.Bool
+  public var enableDNS: Swift.Bool
   public static let ENV_SANDBOX: Swift.String
   public static let ENV_PRODUCTION: Swift.String
   @objc override dynamic public init()
   @available(*, deprecated, message: "Please use OptionsBuilder")
-  convenience public init(clientId: Swift.String, sessionKey: Swift.String, parentSessionKey: Swift.String, userIdHash: Swift.String, environment: Swift.String, enableBehaviorBiometrics: Swift.Bool, flow: Swift.String, partnerId: Swift.String, enableClipboardTracking: Swift.Bool = false, enableFieldTracking: Swift.Bool = true, region: MobileIntelligence.Region = Region.DEFAULT, baseUrl: Swift.String = "")
+  convenience public init(clientId: Swift.String, sessionKey: Swift.String, parentSessionKey: Swift.String, userIdHash: Swift.String, environment: Swift.String, enableBehaviorBiometrics: Swift.Bool, flow: Swift.String, partnerId: Swift.String, enableClipboardTracking: Swift.Bool = false, enableFieldTracking: Swift.Bool = true, region: MobileIntelligence.Region = Region.DEFAULT, baseUrl: Swift.String = "", apiSubdomain: Swift.String?, pixelSubdomain: Swift.String?, enableDNS: Swift.Bool = true)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(UpdateOptions) public class UpdateOptions : ObjectiveC.NSObject {
@@ -165,8 +138,10 @@ public enum Region : Swift.String {
   @objc public var flow: Swift.String
   public var enableBehaviorBiometrics: Swift.Bool?
   public var enableClipboardTracking: Swift.Bool?
+  @objc public var apiSubdomain: Swift.String?
+  @objc public var pixelSubdomain: Swift.String?
   @objc override dynamic public init()
-  convenience public init(sessionKey: Swift.String = "", parentSessionKey: Swift.String = "", userIdHash: Swift.String?, flow: Swift.String = "", enableBehaviorBiometrics: Swift.Bool? = nil, enableClipboardTracking: Swift.Bool? = nil)
+  convenience public init(sessionKey: Swift.String = "", parentSessionKey: Swift.String = "", userIdHash: Swift.String?, flow: Swift.String = "", enableBehaviorBiometrics: Swift.Bool? = nil, enableClipboardTracking: Swift.Bool? = nil, apiSubdomain: Swift.String? = nil, pixelSubdomain: Swift.String? = nil)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(OptionBuilder) public class OptionsBuilder : ObjectiveC.NSObject {
@@ -187,6 +162,9 @@ public enum Region : Swift.String {
   @objc public func setRegion(with region: Swift.String) -> MobileIntelligence.OptionsBuilder
   @objc public func setBaseUrl(with baseUrl: Swift.String) -> MobileIntelligence.OptionsBuilder
   @objc public func build() -> MobileIntelligence.Options
+  @objc public func setApiSubdomain(_ apiSubdomain: Swift.String) -> MobileIntelligence.OptionsBuilder
+  @objc public func setPixelSubdomain(_ pixelSubdomain: Swift.String) -> MobileIntelligence.OptionsBuilder
+  @objc public func setDNSTrigger(enable: Swift.Bool) -> MobileIntelligence.OptionsBuilder
   @objc deinit
 }
 extension UIKit.UIDevice {
@@ -201,8 +179,6 @@ extension UIKit.UIDevice {
 extension MobileIntelligence.TextFieldType : Swift.Equatable {}
 extension MobileIntelligence.TextFieldType : Swift.Hashable {}
 extension MobileIntelligence.TextFieldType : Swift.RawRepresentable {}
-extension MobileIntelligence.ErrorType : Swift.Equatable {}
-extension MobileIntelligence.ErrorType : Swift.Hashable {}
 extension MobileIntelligence.Model : Swift.Equatable {}
 extension MobileIntelligence.Model : Swift.Hashable {}
 extension MobileIntelligence.Model : Swift.RawRepresentable {}

@@ -302,6 +302,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 
+
 @class Options;
 @class NSString;
 @class Response;
@@ -382,6 +383,22 @@ SWIFT_CLASS_NAMED("OptionsBuilder")
 - (OptionBuilder * _Nonnull)setRegionWith:(NSString * _Nonnull)region SWIFT_WARN_UNUSED_RESULT;
 - (OptionBuilder * _Nonnull)setBaseUrlWith:(NSString * _Nonnull)baseUrl SWIFT_WARN_UNUSED_RESULT;
 - (Options * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
+/// Set up custom subdomains for the base URL used by the SDK.
+/// note:
+/// Adblockers or DNS-level sinkholes might block the Sardine AI domain. This API offers flexibility to bypass such filters by allowing you to set base URLs with pre-configured subdomains in the SDK for routing requests.
+/// \param apiSubdomain specifies a subdomain used for a set of Sardine APIs.
+///
+- (OptionBuilder * _Nonnull)setApiSubdomain:(NSString * _Nonnull)apiSubdomain SWIFT_WARN_UNUSED_RESULT;
+/// Set up custom subdomains for the base URL used by the SDK.
+/// note:
+/// Adblockers or DNS-level sinkholes might block the Sardine AI domain. This API offers flexibility to bypass such filters by allowing you to set base URLs with pre-configured subdomains in the SDK for routing requests.
+/// \param pixelSubdomain specifies a subdomain used for a set of Pixel APIs.
+///
+- (OptionBuilder * _Nonnull)setPixelSubdomain:(NSString * _Nonnull)pixelSubdomain SWIFT_WARN_UNUSED_RESULT;
+/// Enable DNS trigger on device.
+/// \param enable is to set a flag to enable the DNS trigger.
+///
+- (OptionBuilder * _Nonnull)setDNSTriggerWithEnable:(BOOL)enable SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -414,6 +431,8 @@ SWIFT_CLASS_NAMED("UpdateOptions")
 @property (nonatomic, copy) NSString * _Nonnull sessionKey;
 @property (nonatomic, copy) NSString * _Nonnull parentSessionKey;
 @property (nonatomic, copy) NSString * _Nonnull flow;
+@property (nonatomic, copy) NSString * _Nullable apiSubdomain;
+@property (nonatomic, copy) NSString * _Nullable pixelSubdomain;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
