@@ -1,26 +1,30 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MobileIntelligence
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MobileIntelligence
 import AVFAudio
+import AVFoundation
 import AdSupport
 import AppTrackingTransparency
+import AuthenticationServices
 import CallKit
 import SystemConfiguration.CaptiveNetwork
+import CloudKit
 import CommonCrypto
-import CommonCrypto.CommonDigest
 import Compression
 import CoreLocation
 import CoreMotion
 import CoreTelephony
 import CryptoKit
+import Darwin
 import DeviceCheck
 import Foundation
+import LocalAuthentication
+import MachO
 import MessageUI
 @_exported import MobileIntelligence
 import Network
 import ReplayKit
 import SafariServices
-import Security
 import Swift
 import SystemConfiguration
 import UIKit
@@ -28,56 +32,68 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @objc(MobileIntelligence) public class MobileIntelligence : ObjectiveC.NSObject {
+  public static let shared: MobileIntelligence.MobileIntelligence
+  @discardableResult
+  convenience required public init?(withOptions options: MobileIntelligence.Options)
+  @objc public class func setupSdk(options: MobileIntelligence.Options)
+  @objc public class func trackPage(pageName: Swift.String)
+  @objc public class func trackField(forKey key: Swift.String, text: Swift.String)
+  public class func trackFieldFocus(forKey key: Swift.String, hasFocus: Swift.Bool)
+  @objc public class func submitData(isAutoSubmitted: Swift.Bool = false, completion: @escaping ((MobileIntelligence.Response) -> Swift.Void))
+  #if compiler(>=5.3) && $AsyncAwait
+  @discardableResult
+  public class func submitData(isAutoSubmitted: Swift.Bool = false) async -> MobileIntelligence.Response
+  #endif
+  @objc public class func updateOptions(options: MobileIntelligence.UpdateOptions, completion: ((MobileIntelligence.Response) -> Swift.Void)? = nil)
+  #if compiler(>=5.3) && $AsyncAwait
+  @discardableResult
+  @objc public class func updateOptions(options: MobileIntelligence.UpdateOptions) async -> MobileIntelligence.Response
+  #endif
+  public class func updateAuthenticationState(of type: MobileIntelligence.DeviceAuthenticationType = .none, isAuthenticatedSuccessfully: Swift.Bool = false, failureReason: Swift.Int? = nil)
+  @available(*, deprecated, message: "Please use the async getSessionKey.")
+  public class func getSessionKey() -> Swift.String
+  #if compiler(>=5.3) && $AsyncAwait
+  public class func isInitialized() async -> Swift.Bool
+  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Response) public class Response : ObjectiveC.NSObject {
+  public var status: Swift.Bool?
+  public var message: Swift.String?
+  @objc deinit
+}
+extension MobileIntelligence.MobileIntelligence {
+  public class func analyzeDeepfake(from videoDevice: AVFoundation.AVCaptureDevice, sampleBuffer: CoreMedia.CMSampleBuffer)
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var modelName: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var phoneType: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public static let modelIdentifier: Swift.String
+}
+extension MobileIntelligence.MobileIntelligence {
+  public class func collectAppleSignInStatus(for appleIDCredential: AuthenticationServices.ASAuthorizationAppleIDCredential)
+  public class func collectAppleSignInStatus(for identifier: Swift.String, realUserStatus: AuthenticationServices.ASUserDetectionStatus, email: Swift.String?)
+}
 public enum TextFieldType : Swift.String {
-  case userid
-  case email
-  case number
-  case password
-  case other
+  case userid, email, number, password, other
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
-extension UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+public struct SardineSessionKey {
+  public var value: Swift.String
+  public var expiryAt: Swift.Int
+  public var ttlSeconds: Swift.Int
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(MobileIntelligence) public class MobileIntelligence : ObjectiveC.NSObject {
-  @discardableResult
-  convenience required public init(withOptions options: MobileIntelligence.Options)
-  @objc public class func setupSdk(options: MobileIntelligence.Options)
-  @objc public class func trackPage(pageName: Swift.String)
-  @objc public class func trackField(forKey key: Swift.String, text: Swift.String)
-  public class func trackFieldFocus(forKey key: Swift.String, hasFocus: Swift.Bool)
-  @objc public class func submitData(completion: @escaping ((MobileIntelligence.Response) -> Swift.Void))
-  @objc public class func updateOptions(options: MobileIntelligence.UpdateOptions, completion: ((MobileIntelligence.Response) -> Swift.Void)? = nil)
-  public class func getSessionKey() -> Swift.String
-  @objc deinit
-}
-public enum ErrorType : Swift.Error, Foundation.LocalizedError {
-  case noInternetConnection
-  case parseResponseFail
-  case notFound
-  case validationError
-  case serverError
-  case defaultError
-  case systemError(message: Swift.String)
-  public var errorDescription: Swift.String? {
-    get
-  }
-}
-public struct EventsResponse : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Response) public class Response : ObjectiveC.NSObject {
-  public var status: Swift.Bool?
-  public var message: Swift.String?
-  @objc deinit
+extension MobileIntelligence.SardineSessionKey : Swift.Equatable {
+  public static func == (lhs: MobileIntelligence.SardineSessionKey, rhs: MobileIntelligence.SardineSessionKey) -> Swift.Bool
 }
 public struct Crc32 : Swift.CustomStringConvertible {
   public init()
@@ -95,17 +111,68 @@ public struct Adler32 : Swift.CustomStringConvertible {
     get
   }
 }
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+}
+public enum SardineSessionError : Swift.Error {
+  case clientIdEmpty
+  case sessionKeyEmpty
+  case noInternetConnection
+  case failedToRetrieveSessionKey
+  public static func == (a: MobileIntelligence.SardineSessionError, b: MobileIntelligence.SardineSessionError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public enum Model : Swift.String {
-  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPadAir5, iPad5, iPad6, iPad7, iPad8, iPad9, iPad10, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadMini6, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro3_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPadPro5_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhoneSE3, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, iPhone15, iPhone15Plus, iPhone15Pro, iPhone15ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleWatchS7, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, AppleTV2_4K, unrecognized
+  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPadAir5, iPad5, iPad6, iPad7, iPad8, iPad9, iPad10, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadMini6, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro3_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPadPro5_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhoneSE3, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, iPhone15, iPhone15Plus, iPhone15Pro, iPhone15ProMax, iPhone16, iPhone16Plus, iPhone16Pro, iPhone16ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleWatchS7, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, AppleTV2_4K, unrecognized
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
+public enum DeviceAuthenticationType : Swift.String, Swift.Encodable {
+  case none
+  case passcode
+  case touchID
+  case faceID
+  case opticID
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers final public class SardineLAContext : LocalAuthentication.LAContext {
+  @objc override final public func canEvaluatePolicy(_ policy: LocalAuthentication.LAPolicy, error: Foundation.NSErrorPointer) -> Swift.Bool
+  @objc override final public func evaluatePolicy(_ policy: LocalAuthentication.LAPolicy, localizedReason: Swift.String, reply: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Foundation.URLSessionConfiguration {
+  public class var sardineDefault: Foundation.URLSessionConfiguration {
+    get
+  }
+}
+extension MobileIntelligence.MobileIntelligence {
+  #if compiler(>=5.3) && $AsyncAwait
+  public class func fetchSessionKey(for clientSessionOptions: MobileIntelligence.Options) async throws -> MobileIntelligence.SardineSessionKey
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public class func getSessionKey() async -> Swift.String
+  #endif
+}
 public enum Region : Swift.String {
   case DEFAULT
   case EU
+  case CA
+  case IN
+  case AU
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -117,13 +184,15 @@ public enum Region : Swift.String {
   public var sessionKey: Swift.String?
   public var parentSessionKey: Swift.String?
   public var userIdHash: Swift.String?
-  public var environment: Swift.String
+  public var environment: Swift.String?
   public var flow: Swift.String?
   public var partnerId: Swift.String?
   public var enableBehaviorBiometrics: Swift.Bool
   public var enableClipboardTracking: Swift.Bool
   public var enableFieldTracking: Swift.Bool
   public var enableDNS: Swift.Bool
+  public var isCloudEntitlementSet: Swift.Bool
+  public var dataSharingClientIds: [Swift.String]
   public static let ENV_SANDBOX: Swift.String
   public static let ENV_PRODUCTION: Swift.String
   @objc override dynamic public init()
@@ -165,23 +234,21 @@ public enum Region : Swift.String {
   @objc public func setApiSubdomain(_ apiSubdomain: Swift.String) -> MobileIntelligence.OptionsBuilder
   @objc public func setPixelSubdomain(_ pixelSubdomain: Swift.String) -> MobileIntelligence.OptionsBuilder
   @objc public func setDNSTrigger(enable: Swift.Bool) -> MobileIntelligence.OptionsBuilder
+  @objc public func isCloudEntitlementSet(isEntitled: Swift.Bool) -> MobileIntelligence.OptionsBuilder
+  @objc public func setDataSharingClientIds(_ clientIds: [Swift.String]) -> MobileIntelligence.OptionsBuilder
   @objc deinit
-}
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public var type: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) public var phoneType: Swift.String {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) public static let modelIdentifier: Swift.String
 }
 extension MobileIntelligence.TextFieldType : Swift.Equatable {}
 extension MobileIntelligence.TextFieldType : Swift.Hashable {}
 extension MobileIntelligence.TextFieldType : Swift.RawRepresentable {}
+extension MobileIntelligence.SardineSessionError : Swift.Equatable {}
+extension MobileIntelligence.SardineSessionError : Swift.Hashable {}
 extension MobileIntelligence.Model : Swift.Equatable {}
 extension MobileIntelligence.Model : Swift.Hashable {}
 extension MobileIntelligence.Model : Swift.RawRepresentable {}
+extension MobileIntelligence.DeviceAuthenticationType : Swift.Equatable {}
+extension MobileIntelligence.DeviceAuthenticationType : Swift.Hashable {}
+extension MobileIntelligence.DeviceAuthenticationType : Swift.RawRepresentable {}
 extension MobileIntelligence.Region : Swift.Equatable {}
 extension MobileIntelligence.Region : Swift.Hashable {}
 extension MobileIntelligence.Region : Swift.RawRepresentable {}
