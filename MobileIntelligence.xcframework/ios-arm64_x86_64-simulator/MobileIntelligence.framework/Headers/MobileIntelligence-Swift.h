@@ -278,6 +278,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
+@import LocalAuthentication;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -303,6 +304,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+
+
+
+
+
+
+
 @class Options;
 @class NSString;
 @class Response;
@@ -311,14 +321,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// Sardine’s Device Intelligence product provides a tamper-proof and reliable fingerprint for a visitor to your website or mobile app. Anyone accepting payments online (e-commerce merchants, fintechs, banks) can use Sardine’s Device Intelligence to detect payment fraud and referral abuse. Moreover, they can reduce customer friction at the time of customer onboarding or payments by requiring 2FA only on untrusted devices.
 SWIFT_CLASS_NAMED("MobileIntelligence")
 @interface MobileIntelligence : NSObject
-/// Method to initialize MobileIntelligence with device & event tracking
-/// SAMPLE CODE SNIPPET:
-/// \code
-/// MobileIntelligence.init()
-///
-/// \endcode
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)setupSdkWithOptions:(Options * _Nonnull)options;
 /// TRACKPAGE method will handles some behavior biometrics
 /// \param pageName key to set the pageName need to be tracked
@@ -349,12 +351,22 @@ SWIFT_CLASS_NAMED("MobileIntelligence")
 /// }
 ///
 /// \endcode
-+ (void)submitDataWithCompletion:(void (^ _Nonnull)(Response * _Nonnull))completion;
++ (void)submitDataWithIsAutoSubmitted:(BOOL)isAutoSubmitted completion:(void (^ _Nonnull)(Response * _Nonnull))completion;
 /// Method to update configuration options of SDK
 /// \param options Fields to update (can be userIdHash, flow and/or sessionKey)
 ///
 + (void)updateOptionsWithOptions:(UpdateOptions * _Nonnull)options completion:(void (^ _Nullable)(Response * _Nonnull))completion;
+/// Method to update configuration options of SDK
+/// \param options Fields to update (can be userIdHash, flow and/or sessionKey)
+///
++ (void)updateOptionsWithOptions:(UpdateOptions * _Nonnull)options completionHandler:(void (^ _Nonnull)(Response * _Nonnull))completionHandler;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+
+
 
 
 
@@ -368,6 +380,11 @@ SWIFT_CLASS_NAMED("OptionsBuilder")
 @interface OptionBuilder : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (OptionBuilder * _Nonnull)setClientIdWith:(NSString * _Nonnull)clientId SWIFT_WARN_UNUSED_RESULT;
+/// Updates the session key used by the SDK.
+/// warning:
+/// If you support stateless architecture, call <code>refreshSessionKey</code> instead.
+/// \param sessionKey A string identifying the session.
+///
 - (OptionBuilder * _Nonnull)setSessionKeyWith:(NSString * _Nonnull)sessionKey SWIFT_WARN_UNUSED_RESULT;
 - (OptionBuilder * _Nonnull)setUserIdHashWith:(NSString * _Nonnull)userIdHash SWIFT_WARN_UNUSED_RESULT;
 - (OptionBuilder * _Nonnull)setEnvironmentWith:(NSString * _Nonnull)environment SWIFT_WARN_UNUSED_RESULT;
@@ -399,14 +416,42 @@ SWIFT_CLASS_NAMED("OptionsBuilder")
 /// \param enable is to set a flag to enable the DNS trigger.
 ///
 - (OptionBuilder * _Nonnull)setDNSTriggerWithEnable:(BOOL)enable SWIFT_WARN_UNUSED_RESULT;
+/// Flag to determine cloud entitlement configuration.
+/// warning:
+/// DO NOT set this value to true if CloudKit entitlements have not been properly configured for your application, otherwise the SDK crash.
+/// \param isEntitled is to set a flag to inform cloud entitlement configuration to SDK.
+///
+- (OptionBuilder * _Nonnull)isCloudEntitlementSetWithIsEntitled:(BOOL)isEntitled SWIFT_WARN_UNUSED_RESULT;
+/// Configures the data sharing clients for the current session.
+/// \param clientIds An array of string identifiers used to specify which clients are authorized to share data via the Sardine server.
+///
+- (OptionBuilder * _Nonnull)setDataSharingClientIds:(NSArray<NSString *> * _Nonnull)clientIds SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
+
+/// / MARK: Model to manage events response
 SWIFT_CLASS_NAMED("Response")
 @interface Response : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+@class NSError;
+
+/// <code>SardineLAContext</code> is designed to detect the biometric authentication type set on the device and track attempts to verify its success.
+/// <h1>Notes:</h1>
+/// We do not collect any user sensitive data.
+SWIFT_CLASS("_TtC18MobileIntelligence16SardineLAContext")
+@interface SardineLAContext : LAContext
+/// Detect the biometric authentication type set on the device and update the corresponding flag.
+- (BOOL)canEvaluatePolicy:(LAPolicy)policy error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+/// Track attempts to verify its success and update its associated flag..
+- (void)evaluatePolicy:(LAPolicy)policy localizedReason:(NSString * _Nonnull)localizedReason reply:(void (^ _Nonnull)(BOOL, NSError * _Nullable))reply;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 
 
@@ -425,6 +470,8 @@ SWIFT_CLASS_NAMED("Response")
 
 
 
+
+
 SWIFT_CLASS_NAMED("UpdateOptions")
 @interface UpdateOptions : NSObject
 @property (nonatomic, copy) NSString * _Nullable userIdHash;
@@ -435,6 +482,7 @@ SWIFT_CLASS_NAMED("UpdateOptions")
 @property (nonatomic, copy) NSString * _Nullable pixelSubdomain;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 #endif
 #if __has_attribute(external_source_symbol)
@@ -724,6 +772,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
+@import LocalAuthentication;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -749,6 +798,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+
+
+
+
+
+
+
 @class Options;
 @class NSString;
 @class Response;
@@ -757,14 +815,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// Sardine’s Device Intelligence product provides a tamper-proof and reliable fingerprint for a visitor to your website or mobile app. Anyone accepting payments online (e-commerce merchants, fintechs, banks) can use Sardine’s Device Intelligence to detect payment fraud and referral abuse. Moreover, they can reduce customer friction at the time of customer onboarding or payments by requiring 2FA only on untrusted devices.
 SWIFT_CLASS_NAMED("MobileIntelligence")
 @interface MobileIntelligence : NSObject
-/// Method to initialize MobileIntelligence with device & event tracking
-/// SAMPLE CODE SNIPPET:
-/// \code
-/// MobileIntelligence.init()
-///
-/// \endcode
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)setupSdkWithOptions:(Options * _Nonnull)options;
 /// TRACKPAGE method will handles some behavior biometrics
 /// \param pageName key to set the pageName need to be tracked
@@ -795,12 +845,22 @@ SWIFT_CLASS_NAMED("MobileIntelligence")
 /// }
 ///
 /// \endcode
-+ (void)submitDataWithCompletion:(void (^ _Nonnull)(Response * _Nonnull))completion;
++ (void)submitDataWithIsAutoSubmitted:(BOOL)isAutoSubmitted completion:(void (^ _Nonnull)(Response * _Nonnull))completion;
 /// Method to update configuration options of SDK
 /// \param options Fields to update (can be userIdHash, flow and/or sessionKey)
 ///
 + (void)updateOptionsWithOptions:(UpdateOptions * _Nonnull)options completion:(void (^ _Nullable)(Response * _Nonnull))completion;
+/// Method to update configuration options of SDK
+/// \param options Fields to update (can be userIdHash, flow and/or sessionKey)
+///
++ (void)updateOptionsWithOptions:(UpdateOptions * _Nonnull)options completionHandler:(void (^ _Nonnull)(Response * _Nonnull))completionHandler;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+
+
 
 
 
@@ -814,6 +874,11 @@ SWIFT_CLASS_NAMED("OptionsBuilder")
 @interface OptionBuilder : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (OptionBuilder * _Nonnull)setClientIdWith:(NSString * _Nonnull)clientId SWIFT_WARN_UNUSED_RESULT;
+/// Updates the session key used by the SDK.
+/// warning:
+/// If you support stateless architecture, call <code>refreshSessionKey</code> instead.
+/// \param sessionKey A string identifying the session.
+///
 - (OptionBuilder * _Nonnull)setSessionKeyWith:(NSString * _Nonnull)sessionKey SWIFT_WARN_UNUSED_RESULT;
 - (OptionBuilder * _Nonnull)setUserIdHashWith:(NSString * _Nonnull)userIdHash SWIFT_WARN_UNUSED_RESULT;
 - (OptionBuilder * _Nonnull)setEnvironmentWith:(NSString * _Nonnull)environment SWIFT_WARN_UNUSED_RESULT;
@@ -845,14 +910,42 @@ SWIFT_CLASS_NAMED("OptionsBuilder")
 /// \param enable is to set a flag to enable the DNS trigger.
 ///
 - (OptionBuilder * _Nonnull)setDNSTriggerWithEnable:(BOOL)enable SWIFT_WARN_UNUSED_RESULT;
+/// Flag to determine cloud entitlement configuration.
+/// warning:
+/// DO NOT set this value to true if CloudKit entitlements have not been properly configured for your application, otherwise the SDK crash.
+/// \param isEntitled is to set a flag to inform cloud entitlement configuration to SDK.
+///
+- (OptionBuilder * _Nonnull)isCloudEntitlementSetWithIsEntitled:(BOOL)isEntitled SWIFT_WARN_UNUSED_RESULT;
+/// Configures the data sharing clients for the current session.
+/// \param clientIds An array of string identifiers used to specify which clients are authorized to share data via the Sardine server.
+///
+- (OptionBuilder * _Nonnull)setDataSharingClientIds:(NSArray<NSString *> * _Nonnull)clientIds SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
+
+/// / MARK: Model to manage events response
 SWIFT_CLASS_NAMED("Response")
 @interface Response : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+@class NSError;
+
+/// <code>SardineLAContext</code> is designed to detect the biometric authentication type set on the device and track attempts to verify its success.
+/// <h1>Notes:</h1>
+/// We do not collect any user sensitive data.
+SWIFT_CLASS("_TtC18MobileIntelligence16SardineLAContext")
+@interface SardineLAContext : LAContext
+/// Detect the biometric authentication type set on the device and update the corresponding flag.
+- (BOOL)canEvaluatePolicy:(LAPolicy)policy error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+/// Track attempts to verify its success and update its associated flag..
+- (void)evaluatePolicy:(LAPolicy)policy localizedReason:(NSString * _Nonnull)localizedReason reply:(void (^ _Nonnull)(BOOL, NSError * _Nullable))reply;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 
 
@@ -871,6 +964,8 @@ SWIFT_CLASS_NAMED("Response")
 
 
 
+
+
 SWIFT_CLASS_NAMED("UpdateOptions")
 @interface UpdateOptions : NSObject
 @property (nonatomic, copy) NSString * _Nullable userIdHash;
@@ -881,6 +976,7 @@ SWIFT_CLASS_NAMED("UpdateOptions")
 @property (nonatomic, copy) NSString * _Nullable pixelSubdomain;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 #endif
 #if __has_attribute(external_source_symbol)
